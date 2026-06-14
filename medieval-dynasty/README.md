@@ -291,10 +291,11 @@ Building everything as fast as possible is a trap — most buildings only make s
 
 > **How to get Farming tech points early:** craft a Wooden Hoe (1 log + 5 sticks, hand-craftable), place a small field from the Q menu, and use the hoe on one or two plots. 5 points takes only a few minutes and unlocks Food Storage I. ⚠️ *pending verification — confirm that grubbing an empty field without seeds or fertiliser generates Farming tech points*
 
-**Useful buildings with prerequisites:**
-- **Kitchen I** (25 Production tech) — adds an Oven for baking and a Stone Grate for roasting. The house fireplace already covers roasting. Cauldron for soups and stews not observed in Tier 1 houses ⚠️ — if absent, Kitchen I is the only way to make them without a Tavern. Becomes more useful mid-year once you have crops and ingredients.
-- **Fishing Hut I** (500 Survival tech) — not viable early. Requires a fishing spear not craftable at the lodge, and manual spear fishing is tedious. Worth considering once Survival tech is high enough.
-- **Smithy I** (50 Production tech) — schemes cost coins you won't have at the start, but by winter with copper and tin stockpiled from mining, bronze production is entirely viable.
+**Buildings that need preparation:**
+
+- **Kitchen I** (25 Production tech) — Stone Grate, Cauldron and Oven for roasting, soups and baking.
+- **Fishing Hut I** (500 Survival tech) — requires a fishing spear not craftable at the lodge.
+- **Smithy I** (50 Production tech) — smelts ore into bars and crafts tools and weapons. Schemes require coins upfront.
 
 Tier 1 buildings only require logs, sticks and straw — no planks needed. Planks only appear in Tier 2 construction onward.
 
