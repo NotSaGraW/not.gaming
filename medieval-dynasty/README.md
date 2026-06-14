@@ -596,17 +596,6 @@ Ignoring Herald quests drops opinion to Neutral at most. **Failing** them can dr
 
 ---
 
-## ⚠️ Pending In-Game Verification
-
-- Exact contents of Sedowin's starting chest
-- Full difficulty configuration screen and effects per level
-- Rabbit trap recipe
-- Tech points required for Wooden Round Shield
-- Full hand-craftable item list
-- Waterskin recipe and tech point requirement
-
----
-
 ## Appendix — Co-op
 
 Each player has their own inventory and vital parameters — hunger and thirst are individual. Dead players cannot be revived by others — they respawn in their own house. Season change tech points and Dynasty Reputation are shared.
