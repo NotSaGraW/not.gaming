@@ -275,7 +275,6 @@ Unlocked in the Production tech tree. Crafted at the Sewing Hut or purchased fro
 - Buildings unlock automatically at the required tech threshold — no additional cost.
 - Placed but unbuilt blueprints **already generate taxes**.
 - Buildings without a completed foundation **do not pay taxes**.
-- All players can insulate houses — the Handyman skill was removed in version 2.3.0.0.
 - Buildings and furniture can be **moved** with the hammer in Move Mode at no additional resource cost.
 - All Customise Game settings can be changed **at any time**, including in long-running saves.
 
