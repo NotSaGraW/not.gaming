@@ -1,5 +1,35 @@
 # Medieval Dynasty — Practical Guide
+
 > Map: **Oxbow** · Version: **2.6.0.1** · Last updated: June 2026
+
+Practical guide for Medieval Dynasty on the Oxbow map. Written for normal difficulty, applicable to other settings.
+
+![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey)
+![Version](https://img.shields.io/badge/game%20version-2.6.0.1-blue)
+![Status](https://img.shields.io/badge/status-active-green)
+
+---
+
+## Contents
+
+- [Starting Out](#starting-out)
+- [Survival Basics](#survival-basics)
+- [Food](#food)
+- [Water](#water)
+- [Resources and Mining](#resources-and-mining)
+- [Crafting and Production](#crafting-and-production)
+- [Buildings and Construction](#buildings-and-construction)
+- [Villagers and Settlement Management](#villagers-and-settlement-management)
+- [Farming](#farming)
+- [Farm Animals](#farm-animals)
+- [Combat and Bandits](#combat-and-bandits)
+- [Economy and Trade](#economy-and-trade)
+- [The King and the Herald](#the-king-and-the-herald)
+- [Quick Reference](#quick-reference)
+
+**Other files in this folder:**
+- [pending.md](./pending.md) — information awaiting in-game verification
+- [patch-notes.md](./patch-notes.md) — relevant game version changes
 
 > Items marked ⚠️ are pending in-game verification.
 
