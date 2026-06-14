@@ -4,9 +4,15 @@
 
 Practical guide for Medieval Dynasty on the Oxbow map. Written for normal difficulty, applicable to other settings.
 
-![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey)
-![Version](https://img.shields.io/badge/game%20version-2.6.0.1-blue)
-![Status](https://img.shields.io/badge/status-active-green)
+---
+
+## Files
+
+| File | Description |
+|---|---|
+| [README.md](./README.md) | This document — full practical guide |
+| [pending.md](./pending.md) | Information awaiting in-game verification |
+| [patch-notes.md](./patch-notes.md) | Relevant game version changes |
 
 ---
 
@@ -26,10 +32,6 @@ Practical guide for Medieval Dynasty on the Oxbow map. Written for normal diffic
 - [Economy and Trade](#economy-and-trade)
 - [The King and the Herald](#the-king-and-the-herald)
 - [Quick Reference](#quick-reference)
-
-**Other files in this folder:**
-- [pending.md](./pending.md) — information awaiting in-game verification
-- [patch-notes.md](./patch-notes.md) — relevant game version changes
 
 > Items marked ⚠️ are pending in-game verification.
 
