@@ -4,8 +4,11 @@
 .obsidian/cache
 .trash/
 
-# Publication rule: third-party verbatim captures are local-only (see CLAUDE.md)
+# Publication rule (see CLAUDE.md): third-party verbatim captures are local-only.
+# discord: others' words, privacy/consent. wikigg: CC BY-SA content cannot be
+# redistributed under this repo's BY-NC-SA (ShareAlike forbids adding restrictions).
 source/*-discord-*.md
+source/*-wikigg-*.md
 
 # Game files: trimmed, versioned copies (init configs + base data + mods)
 source/gamedata-*/

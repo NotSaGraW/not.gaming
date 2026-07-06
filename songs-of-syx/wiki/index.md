@@ -19,6 +19,7 @@ cards — not authoritative.
 - [[governing-points]] — admin, population — start 5, +20/governor, +40/promotion; regions can't build without them; Squeeze replaces tax rate
 - [[embassy-emissaries]] — trade, admin — RESOLVED: embassy tech EMBA0 exists (ADMIN tree, 5 lvls, Knowledge, +20%/lvl from game data)
 - [[conscripts]] — military — 70% training setting; division size 50 (measured); army-depot supply chain; "armies are smaller" needs primary source
+- [[brawls]] — loyalty, health, fulfillment — who brawls with whom; guards separate races (0.71.40 hotfix); per-pair race friction values in race files
 - [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
 
 ### strategy

@@ -7,6 +7,8 @@ Update CURRENT_VERSION when a new game version is ingested.
 """
 import os, re, sys, glob
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))  # run from anywhere
+
 CURRENT_VERSION = "v71"
 
 CATEGORIES = {"mechanic", "race", "building", "strategy", "event"}
@@ -60,10 +62,10 @@ for cid in ids:
     if not in_index and not in_cards:
         errors.append(f"ORPHAN: {cid} (not in index nor linked from any card)")
 
-# phantom index entries + index link check
+# phantom index entries (links must resolve to a card or a source)
 for m in re.findall(r"\[\[([^\]|]+)\]\]", index_txt):
-    if m not in ids:
-        errors.append(f"index: phantom card [[{m}]]")
+    if m not in ids and m not in src_ids:
+        errors.append(f"index: phantom entry [[{m}]]")
 
 # uncited sources (curated .md only)
 for s in src_ids:

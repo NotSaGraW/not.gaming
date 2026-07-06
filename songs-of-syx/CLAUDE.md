@@ -60,7 +60,9 @@ the curator decides, the cataloguer may fetch and file after approval.
 
 This repo is **public**. Third-party verbatim content (Discord captures, forum
 posts) is other people's expression: it stays **local-only** — gitignored,
-never committed. Cards built from it use paraphrase and **role-level
+never committed. Community-wiki captures are additionally license-blocked:
+CC BY-SA text cannot be redistributed under this repo's BY-NC-SA (ShareAlike
+forbids adding restrictions). Facts and extracted values always flow freely. Cards built from it use paraphrase and **role-level
 attribution only** ("alpha-tester", "moderator", "community"), never nicknames
 or verbatim quotes. Official developer announcements (patch notes) may be
 committed with attribution. Facts and game knowledge are freely usable;
