@@ -93,6 +93,9 @@ Each card carries:
   trust the source; status says whether anyone has checked.
 - Cataloguer interpretation on a card (e.g. a "Readings" section) must be
   explicitly labeled as inference and never inherits the card's evidence tier.
+- **Run-independence:** cards state facts about the game, valid independent of
+  any playthrough. Curator run context appears only as measurement conditions
+  in `test` sources — never as claims, never in cards or the log as fact.
 - **source** — `[[link]]` to file(s) in `source/`.
 - **relations** — `depends-on` (directional: prerequisite mechanic/tech) and
   `see-also` (undirected, use sparingly).

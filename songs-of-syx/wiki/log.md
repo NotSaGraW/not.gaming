@@ -34,3 +34,9 @@ Append-only record of operations. Consistent prefix so it stays grep-parseable:
 ## [2026-07-06] ingest | card 19: brawls (game-data + community). Discovery: gamedata base-txt/Patchnotes.txt is a hotfix-level changelog absent from Steam announcements (v71 at 0.71.44) — check per version bump. Guards separate races (0.71.40); children excluded from brawls (0.71.41); per-pair race friction in OTHER_RACES (Human→Tilapi 0.2 vs 0.75 default). Extract filed as 2026-07-06-gamedata-brawls-hotfixes.
 
 ## [2026-07-06] ingest+verify | wiki.gg "Brawls" page captured (local-only: CC BY-SA incompatible with repo license; gitignore extended to *-wikigg-*). Its Dondorian/Human asymmetry example verified exactly against race files → page credible; distance constants (10/48/58, Chebyshev) and damage formula adopted as wiki-gg evidence, unverified. Full 8×8 OTHER_RACES matrix extracted (committable). brawls card updated via History.
+
+## [2026-07-06] ingest+verify | test-species-screens filed (Amevia/Tilapi in-game encyclopedia). Amevian 150-year lifespan UI-verified (slavery card annotated). Divergent fulfillment: Tilapi LIKE cannibalism, Amevia hate it. Pending: hover check on Others-row percentages to UI-verify the preference matrix.
+
+## [2026-07-06] correction | cataloguer wrongly logged the curator's city as Amevia+Tilapi — those were just the codex pages being browsed, not city composition. Source context line and log corrected. Recurring failure mode: inference stated as observation (3rd instance today); the evidence/status discipline exists precisely for this.
+
+## [2026-07-06] schema | run-independence rule added: cards record the game, not the playthrough; run context only as test-source measurement conditions.

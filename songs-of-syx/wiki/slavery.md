@@ -16,7 +16,7 @@ Slaves are a fully tradable good — but what you import/export are **captives**
 
 Behavior rules (alpha-tester, Discord 2026-07-06): citizens never brawl with slaves; citizens brawl with citizens of other races; slaves brawl with slaves of other races → single-race slave pools never brawl. *(evidence: community, alpha-tester)*
 
-Slave uprisings replace runaways (v71 announcement summary): unhappy slaves rebel rather than flee. Community observation: Amevians may be the most economical slaves — 150-year lifespan. *(evidence: community)*
+Slave uprisings replace runaways (v71 announcement summary): unhappy slaves rebel rather than flee. Community observation: Amevians may be the most economical slaves — 150-year lifespan *(lifespan UI-verified 2026-07-06: species screen shows death age 150; see [[2026-07-06-test-species-screens]])*.
 
 - depends-on: [[law-and-order]]
 - see-also: —
