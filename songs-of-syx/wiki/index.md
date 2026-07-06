@@ -18,7 +18,8 @@ cards — not authoritative.
 - [[corpse-management]] — health, fulfillment, logistics — corpse removal equal for health; graves add cheap fulfillment; crypt distance penalty UNVERIFIED (test)
 - [[governing-points]] — admin, population — start 5, +20/governor, +40/promotion; regions can't build without them; Squeeze replaces tax rate
 - [[embassy-emissaries]] — trade, admin — DISPUTED: does embassy tech exist in v71? Resolution path on card
-- [[conscripts]] — military — 70% training setting; smaller armies era; "armies are smaller" needs primary source
+- [[conscripts]] — military — 70% training setting; division size 50 (measured); army-depot supply chain; "armies are smaller" needs primary source
+- [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
 
 ### strategy
 - [[population-thresholds]] — population, military, health, admin — the gates: 150 (accidents), 200 (raiders), ~300 (hunting cap), 1500 (promotions)
@@ -29,7 +30,7 @@ cards — not authoritative.
 *(none yet — Argonosh race-file data available in [[2026-07-06-discord-qanda-governing-slaves-health-growth]] if wanted)*
 
 ### building
-*(none yet)*
+- [[training-grounds]] — military, efficiency — 24 conscripts/room (measured); emits noise; tiles-per-soldier arithmetic unresolved (flag)
 
 ### event
 *(none yet)*
