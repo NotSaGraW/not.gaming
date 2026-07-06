@@ -266,6 +266,8 @@ Smelting is always worth it — 2 Copper Ore (7×2 = 14) → Copper Bar (28). 2 
 
 Mine resources respawn every season.
 
+Iron is commonly available at the Skauki mine from day 1; plan early smelting if you want faster tool progression.
+
 #### Trees
 
 | Tree | Logs when felled |
@@ -472,6 +474,14 @@ Baby boom warning: pairing many villagers at once can cause simultaneous pregnan
 - Taxes apply to all built structures regardless of location on the map.
 - The King's opinion **directly affects the tax amount** — good opinion reduces it, bad opinion increases it.
 
+## Demand Control
+
+The **People's Demand Control** tab in Management lets you control what NPCs consume from storage. It covers three categories: Food (64 items), Water (36 items) and Wood (4 items).
+
+**Wood consumption order (priority 1→4):** Firewood → Stick → Log → Plank
+
+Disable everything by default, then enable only what you want NPCs to consume. Without explicit configuration, NPCs may burn construction logs and planks as fuel.
+
 ## Buildings and rules
 
 - Buildings unlock automatically at the required tech threshold — no additional cost.
@@ -605,6 +615,8 @@ Tech points accumulate by doing activities. There are four independent trees —
 ## Smithy
 
 All Smithy recipes require purchasing a scheme from the Technology tab.
+
+Best early profit: the Bronze Knife (1 stick + 1 bronze bar) provides an excellent material-to-value ratio and is a reliable early sell item.
 
 ### Forge — Smelting
 
