@@ -5,7 +5,7 @@ category: mechanic
 affects: [industry, efficiency, logistics]
 version: v71
 evidence: game-data
-status: open
+status: verified
 ---
 
 # Production math (multipliers vs additives)
@@ -25,4 +25,8 @@ Strategy implication (dev-stated, Ch16): early game, **specialize** — the spec
 - depends-on: —
 - see-also: [[tech-tree]], [[free-fetch]], [[logistics-system]], [[training-grounds]] (maintenance/degradation applies to all rooms)
 
-**Source:** [[2026-07-06-gamedata-guide-notes]]
+**Source:** [[2026-07-06-gamedata-guide-notes]], [[2026-07-06-test-pastures-production]]
+
+## History
+
+- **2026-07-06 (measured → status verified):** curator's 4-pasture tooltip dataset confirms the formula numerically — per-room total is a pure product of factors, and the Skill stat itself displays `product(multipliers) × (1 + sum(additives))` (observed: 1.61 × 2.21 = 3.28). Dev manual and live game agree; first formula-level verification in the wiki.

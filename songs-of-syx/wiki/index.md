@@ -26,18 +26,21 @@ cards — not authoritative.
 - [[housing-and-priorities]] — population, efficiency, fulfillment — jobs first, closest home second; master > species > work-group priorities; job zoning IS housing zoning
 - [[health-and-disease]] — health, population — epidemics only below health 1; wells/physicians/lavatories by actual usage; hospitals treat, physicians don't
 - [[overlays]] — efficiency, logistics, health, fulfillment — the 17 in-game instruments; placement claims are judged by overlay, never by screenshot
+- [[water-and-irrigation]] — food, efficiency, health — pumps on groundwater only, 100 pressure = 100 canal tiles; irrigation cost scales with distance → moisture only conditionally fixable
 - [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
 
 ### strategy
 - [[population-thresholds]] — population, military, health, admin — the gates: 150 (accidents), 200 (raiders), ~300 (hunting cap), 1500 (promotions)
 - [[food-harvest-cadence]] — food, population — harvest cadence over food type: daily harvests self-buffer, annual harvests starve you
 - [[dondorian-settlement]] — food, population — mountain-on-ocean fishmax; cold pastures pointless; tyrant Dondorians dev-flagged non-viable
+- [[run-setup-priorities]] — population, food, efficiency — plan deeply only race + region (frozen); the game flattened most other setup gradients; planning tool reserves skeletons
 
 ### race
 *(none yet — Argonosh race-file data available in [[2026-07-06-discord-qanda-governing-slaves-health-growth]] if wanted)*
 
 ### building
 - [[training-grounds]] — military, efficiency — capacity = training dummies (+1 each, 2×2, need access gap; ~5 tiles/soldier, measured); emits noise
+- [[pastures]] — food, industry, efficiency — output formula measured; adult-fraction multiplier dominates young herds (~0.10 floor); 2-missed-days kills livestock; headroom map: faction/tech/nobles
 
 ### event
 *(none yet)*
