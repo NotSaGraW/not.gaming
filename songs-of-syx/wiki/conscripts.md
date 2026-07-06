@@ -1,0 +1,21 @@
+---
+id: conscripts
+name: Conscripts & army size (v70/v71)
+category: mechanic
+affects: [military]
+version: v71
+confidence: community-claim
+---
+
+# Conscripts & army size (v70/v71)
+
+Community claim (#chat-and-discussions, 2026-07-06): conscripts can be set to **70% training**; conscript-spam is "less viable now that armies are smaller", but smaller armies make **equipping much easier**. The army-size reduction is a v70/v71-era change — pre-v70 mass-conscript guides are stale.
+
+Context: v70 remade the battle engine (cavalry, spears, formation defence, morale emphasis) *(patch-note)*; v71 armies can only transfer divisions on the same tile *(patch-note)*.
+
+**Flag:** "armies are smaller" needs a primary source — not found in v70/v71 patch notes as written; likely a balance change or emergent from training/equipment costs. Verify before relying on it.
+
+- depends-on: —
+- see-also: [[law-and-order]] (guards are drawn from trained troops)
+
+**Source:** [[2026-07-06-discord-chat-conscripts-emissaries-crypts-food]], [[2025-12-04-patchnote-v70-riders-of-doom]], [[2026-06-15-patchnote-v71-reign-of-terror]]

@@ -3,3 +3,6 @@
 .obsidian/workspace-mobile.json
 .obsidian/cache
 .trash/
+
+# Publication rule: third-party verbatim captures are local-only (see CLAUDE.md)
+source/*-discord-*.md
