@@ -30,7 +30,7 @@ cards — not authoritative.
 *(none yet — Argonosh race-file data available in [[2026-07-06-discord-qanda-governing-slaves-health-growth]] if wanted)*
 
 ### building
-- [[training-grounds]] — military, efficiency — 24 conscripts/room (measured); emits noise; tiles-per-soldier arithmetic unresolved (flag)
+- [[training-grounds]] — military, efficiency — capacity = training dummies (+1 each, 2×2, need access gap; ~5 tiles/soldier, measured); emits noise
 
 ### event
 *(none yet)*

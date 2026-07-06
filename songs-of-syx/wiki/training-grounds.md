@@ -23,3 +23,4 @@ Measured (2026-07-06, ~286 pop): capacity 24 conscripts per room; 2 rooms → 48
 ## History
 
 - **2026-07-06 (measured):** card created from curator's room readings.
+- **2026-07-06 correction (measured):** capacity driver resolved by construction-mode test — it's dummy count (+1 each, 2×2, reachability-gapped), not floor area. Curator's earlier "5×2 per soldier" corrected to 5×2 per **2** soldiers (~5 tiles/soldier); reconciles with 125/24 panel arithmetic. Flag closed. Also measured: Foundation +3.00%.
