@@ -4,7 +4,8 @@ name: Education (v71 overhaul)
 category: mechanic
 affects: [admin, population, loyalty]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Education (v71 overhaul)

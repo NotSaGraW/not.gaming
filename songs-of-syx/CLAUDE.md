@@ -33,13 +33,24 @@ outrank community claims.
 
 Accepted origins, in trust order:
 
-1. `test` — curator's own in-game measurements (game version, map conditions,
-   and observed numbers recorded).
-2. `patchnote` — official release notes.
-3. `discord` — captures from the official Discord, author names and dates kept.
+1. `game-data` — the game's own init files, trimmed + versioned copies in
+   `source/gamedata-<version>/` (init/, base-data/, base-txt/, mods/;
+   local-only/gitignored, ~1 MB per version). Keep old versions — diffing
+   `gamedata-v71/` vs `gamedata-v72/` reveals every balance change
+   mechanically. Authoritative for *parameters*; says nothing about emergent
+   runtime behavior.
+2. `test` — curator's own in-game measurements (game version, map conditions,
+   and observed numbers recorded). Authoritative for *behavior*.
+3. `patchnote` — official release notes.
+4. `devlog` — the developer's video/blog walkthroughs (transcripts). Ranks with
+   patchnote for intent, below it for exact values.
+5. `discord` — captures from the official Discord, author names and dates kept.
    Alpha-testers and the dev rank above general community.
-4. `wiki-gg` / `wiki-old` — community wiki pages, dated; assume stale until the
+6. `wiki-gg` / `wiki-old` — community wiki pages, dated; assume stale until the
    claim is version-checked.
+
+Small dated extracts from game files (a node, a stat block) may be committed
+with file-path attribution; wholesale game-file copies stay local-only.
 
 Reject hype and uncredentialed content. Every claim on a card must be traceable
 to a file in `source/`. The cataloguer never creates sources — for web content
@@ -68,10 +79,18 @@ Each card carries:
   `admin`, `population`, `health`. One form per term; extend only via curator
   approval, recorded here.
 - **version** — game version the claim was last verified against (e.g. `v71`).
-  A card whose version lags the current game version is stale-by-default.
-- **confidence** — `measured` | `patch-note` | `dev-stated` | `community-claim`
-  | `disputed`. Only `measured` and `patch-note` justify building strategy on.
-  `disputed` cards carry a "test in-game" flag and name both claims.
+  Staleness is *derived* (version < current game version → lint warns), never
+  stored as a field.
+- **evidence** — provenance tier, one of: `game-data` | `measured` |
+  `patch-note` | `dev-stated` | `community`. Never changes unless a better
+  source arrives. game-data/measured are authoritative (parameters/behavior
+  respectively).
+- **status** — verification state, one of: `open` (single-source, unchecked) |
+  `verified` (independently cross-confirmed) | `disputed` (conflicting claims;
+  card names both and carries a resolution path). Evidence says how much to
+  trust the source; status says whether anyone has checked.
+- Cataloguer interpretation on a card (e.g. a "Readings" section) must be
+  explicitly labeled as inference and never inherits the card's evidence tier.
 - **source** — `[[link]]` to file(s) in `source/`.
 - **relations** — `depends-on` (directional: prerequisite mechanic/tech) and
   `see-also` (undirected, use sparingly).
@@ -102,5 +121,5 @@ never overwrite prior claims (method rule 10).
 - Source files: `YYYY-MM-DD-<origin>-<topic>.md`, origin from the list above.
   Named by provenance, never by category label (method rule 5).
 - Log entries: `## [YYYY-MM-DD] operation | detail`.
-- Contradictions get their own card (`confidence: disputed`) with status
-  open / held / resolved-with-proof.
+- Contradictions get their own card (`status: disputed`) naming both claims,
+  their sources, and a resolution path.

@@ -4,7 +4,8 @@ name: Slavery (v71 rework)
 category: mechanic
 affects: [population, loyalty, trade]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Slavery (v71 rework)
@@ -13,9 +14,9 @@ Reworked from the ground up in v71. Slaves are a special subject type whose fulf
 
 Slaves are a fully tradable good — but what you import/export are **captives**; you must enslave captives to make them slaves. Captives are a separate pool; treatment affects chivalry/cruelty (small fulfillment effect; dev plans to tie it to diplomacy later).
 
-Behavior rules (alpha-tester, Discord 2026-07-06): citizens never brawl with slaves; citizens brawl with citizens of other races; slaves brawl with slaves of other races → single-race slave pools never brawl. *(confidence: community-claim, alpha-tester)*
+Behavior rules (alpha-tester, Discord 2026-07-06): citizens never brawl with slaves; citizens brawl with citizens of other races; slaves brawl with slaves of other races → single-race slave pools never brawl. *(evidence: community, alpha-tester)*
 
-Slave uprisings replace runaways (v71 announcement summary): unhappy slaves rebel rather than flee. Community observation: Amevians may be the most economical slaves — 150-year lifespan. *(community-claim)*
+Slave uprisings replace runaways (v71 announcement summary): unhappy slaves rebel rather than flee. Community observation: Amevians may be the most economical slaves — 150-year lifespan. *(evidence: community)*
 
 - depends-on: [[law-and-order]]
 - see-also: —

@@ -4,7 +4,8 @@ name: Trade & economy (v71 refactor)
 category: mechanic
 affects: [trade, logistics, industry]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Trade & economy (v71 refactor)

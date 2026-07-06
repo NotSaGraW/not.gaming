@@ -4,7 +4,8 @@ name: Governing points (regions)
 category: mechanic
 affects: [admin, population]
 version: v71
-confidence: community-claim
+evidence: community
+status: open
 ---
 
 # Governing points (regions)

@@ -4,7 +4,8 @@ name: Corpse management (graves, health, fulfillment)
 category: mechanic
 affects: [health, fulfillment, logistics]
 version: v71
-confidence: community-claim
+evidence: community
+status: open
 ---
 
 # Corpse management (graves, health, fulfillment)

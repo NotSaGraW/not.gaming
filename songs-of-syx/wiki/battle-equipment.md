@@ -4,7 +4,8 @@ name: Battle equipment & training stats
 category: mechanic
 affects: [military, industry]
 version: v71
-confidence: measured
+evidence: measured
+status: open
 ---
 
 # Battle equipment & training stats
@@ -39,7 +40,7 @@ Tooltip-measured values (v71, curator capture 2026-07-06). All bonuses per equip
 
 **Bow projectile scaling (From → To, presumably skill/training):** Range 119.4 → 197.4 tiles, Accuracy 0.8 → 1.0, Reload 30s → 3s, Max angle 50° → 75°, Force 14 → 18, Pierce Damage 4 → 12. Ammunition 40 per 24h. *(The From→To axis is inferred to be skill-dependent — not stated in tooltip. Flag: confirm what drives it.)*
 
-**Readings:** melee training is the single largest multiplier in the panel (+100% offence AND defence) — before optimizing equipment, fill Training Grounds. Spear (+5 formation) vs War-Beast (−100% formation) are opposite archetypes: formation infantry vs shock cavalry, matching v70's battle-engine design.
+**Readings (cataloguer inference — NOT measured, do not inherit this card's evidence tier):** melee training is the single largest multiplier in the panel (+100% offence AND defence) — before optimizing equipment, fill Training Grounds. Spear (+5 formation) vs War-Beast (−100% formation) are opposite archetypes: formation infantry vs shock cavalry, matching v70's battle-engine design.
 
 - depends-on: [[conscripts]]
 - see-also: [[law-and-order]] (equipment/training also improve guard law enforcement, per patch notes)

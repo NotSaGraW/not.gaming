@@ -4,7 +4,8 @@ name: Law & Order (v71 rework)
 category: mechanic
 affects: [loyalty, fulfillment]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Law & Order (v71 rework)

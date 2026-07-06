@@ -4,7 +4,8 @@ name: Training Grounds (building)
 category: building
 affects: [military, efficiency]
 version: v71
-confidence: measured
+evidence: measured
+status: verified
 ---
 
 # Training Grounds (building)
@@ -18,7 +19,7 @@ Measured (2026-07-06, ~286 pop): capacity 24 conscripts per room; 2 rooms → 48
 - depends-on: —
 - see-also: [[battle-equipment]], [[conscripts]], [[law-and-order]] (trained guards enforce law better)
 
-**Source:** [[2026-07-06-test-training-grounds]], [[2026-07-06-test-conscripts-tooltips]]
+**Source:** [[2026-07-06-test-training-grounds]], [[2026-07-06-test-conscripts-tooltips]], [[2026-07-06-test-training-ground-construction]]
 
 ## History
 

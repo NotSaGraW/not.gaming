@@ -17,7 +17,7 @@ cards — not authoritative.
 - [[accidents-and-nurseries]] — health, population, fulfillment — accidents off <150 employees, exponential later; global nursery; community says skip early
 - [[corpse-management]] — health, fulfillment, logistics — corpse removal equal for health; graves add cheap fulfillment; crypt distance penalty UNVERIFIED (test)
 - [[governing-points]] — admin, population — start 5, +20/governor, +40/promotion; regions can't build without them; Squeeze replaces tax rate
-- [[embassy-emissaries]] — trade, admin — DISPUTED: does embassy tech exist in v71? Resolution path on card
+- [[embassy-emissaries]] — trade, admin — RESOLVED: embassy tech EMBA0 exists (ADMIN tree, 5 lvls, Knowledge, +20%/lvl from game data)
 - [[conscripts]] — military — 70% training setting; division size 50 (measured); army-depot supply chain; "armies are smaller" needs primary source
 - [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
 

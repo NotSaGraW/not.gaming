@@ -6,3 +6,6 @@
 
 # Publication rule: third-party verbatim captures are local-only (see CLAUDE.md)
 source/*-discord-*.md
+
+# Game files: trimmed, versioned copies (init configs + base data + mods)
+source/gamedata-*/

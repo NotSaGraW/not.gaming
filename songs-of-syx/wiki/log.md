@@ -20,3 +20,13 @@ Append-only record of operations. Consistent prefix so it stays grep-parseable:
 ## [2026-07-06] ingest | test-training-grounds filed. New card training-grounds (first building card): 24 conscripts/room, emits noise. Open flag: tiles-per-soldier arithmetic (curator 10/soldier vs panel-implied 5.2/soldier) — determine capacity driver.
 
 ## [2026-07-06] resolve | test-training-ground-construction filed: capacity = dummy count (+1 per 2×2 dummy, reachability gap required, ~5 tiles/soldier). Curator self-corrected unit error; flag on training-grounds closed same session it was opened.
+
+## [2026-07-06] schema+resolve | curator mounted v71 game files into source/ (gitignored). New origin `game-data` added to schema (top rank for parameters); `devlog` origin formalized. First game-data resolution: embassy tech EMBA0 found in tech/ADMIN.txt — embassy-emissaries card disputed → dev-stated. Extract filed as 2026-07-06-gamedata-embassy-tech.
+
+## [2026-07-06] restructure | game files trimmed to source/gamedata-v71/ (init + base-data + base-txt + mods, 487 files, ~1 MB, verified byte-identical to raw copy). Raw base/data/mods folders flagged for curator deletion. Convention: one gamedata-<version> folder per game version, kept forever for cross-version diffs.
+
+## [2026-07-06] correction | metadata fix in both discord source headers (immutability exception, curator-approved): "message content verbatim" was inaccurate — cataloguer trimmed UI artifacts and reconstructed message lines. Now reads "faithfully reconstructed, not byte-exact, original not re-fetchable". Content untouched.
+
+## [2026-07-06] schema | confidence field split into evidence (game-data|measured|patch-note|dev-stated|community) + status (open|verified|disputed) — orthogonal axes were conflated. Staleness derived from version field, not stored. Inference-labeling rule added. lint.py added to repo root.
+
+## [2026-07-06] INCIDENT+repair | schema migration script (sandbox python) wrote through a stale mount cache after curator's Windows-side mass deletions: cards got truncated tails or NUL padding, some lost History sections. Detected by lint.py broken-link errors + curator's NUL screenshot. All 18 cards rewritten clean from cataloguer context via the reliable write path; index/log/CLAUDE.md/sources unaffected. NEW RULE: no sandbox batch-rewrites of wiki files — bulk edits go through the harness file tools; after any batch operation, verify file tails, not just non-emptiness.

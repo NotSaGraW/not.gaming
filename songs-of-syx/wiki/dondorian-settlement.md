@@ -4,7 +4,8 @@ name: Dondorian settlement strategy
 category: strategy
 affects: [food, population]
 version: v71
-confidence: community-claim
+evidence: community
+status: open
 ---
 
 # Dondorian settlement strategy

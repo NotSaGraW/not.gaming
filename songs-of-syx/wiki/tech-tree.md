@@ -4,7 +4,8 @@ name: Tech tree (v71 remake)
 category: mechanic
 affects: [admin, industry, trade]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Tech tree (v71 remake)

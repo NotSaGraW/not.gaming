@@ -4,7 +4,8 @@ name: Natural Propagation (children & family)
 category: mechanic
 affects: [population, food, fulfillment]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Natural Propagation (children & family)

@@ -4,7 +4,8 @@ name: Conscripts & army size (v70/v71)
 category: mechanic
 affects: [military]
 version: v71
-confidence: community-claim
+evidence: community
+status: open
 ---
 
 # Conscripts & army size (v70/v71)

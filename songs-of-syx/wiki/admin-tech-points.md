@@ -4,7 +4,8 @@ name: Admin & the three tech points
 category: mechanic
 affects: [admin, industry]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Admin & the three tech points

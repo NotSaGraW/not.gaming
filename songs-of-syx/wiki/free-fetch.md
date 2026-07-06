@@ -4,7 +4,8 @@ name: Free fetch & carry capacity (service logistics)
 category: mechanic
 affects: [logistics, efficiency]
 version: v71
-confidence: patch-note
+evidence: patch-note
+status: open
 ---
 
 # Free fetch & carry capacity (service logistics)

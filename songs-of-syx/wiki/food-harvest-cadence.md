@@ -4,7 +4,8 @@ name: Food strategy — harvest cadence over food type
 category: strategy
 affects: [food, population]
 version: v71
-confidence: community-claim
+evidence: community
+status: open
 ---
 
 # Food strategy — harvest cadence over food type
