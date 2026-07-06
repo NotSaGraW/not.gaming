@@ -12,7 +12,7 @@ status: verified
 
 Feeds the melee-training pool that gives divisions their biggest multipliers (see [[battle-equipment]]: +100% offence, +100% defence at full training).
 
-Measured (2026-07-06, ~286 pop): capacity 24 conscripts per room; 2 rooms → 48/48 pool. Room #001: 125 tiles for 24 capacity. Recruits-limit slider per room and global; Training Speed 110% observed (upgrades 0/2 available). Insulation tracked per room (100% observed); **emits noise** — keep away from housing/fulfillment rooms. Degrade 0%.
+Room properties (measured): recruits-limit slider exists per room and globally; training speed is a room stat with upgrades (0/2 tier observed); insulation tracked per room; **emits noise** (compact per-room aura, see [[overlays]]); subject to degradation like any room. Capacity is NOT fixed per room — it equals the dummy count (below); observed instance and conditions in [[2026-07-06-test-training-grounds]].
 
 **Layout (measured, resolved):** capacity = **number of Training Dummies, +1 each**. Dummies are 2×2 and must be reachable ("Item must be reachable") — no edge-to-edge tiling; leave a 1×2 access gap. Efficient packing: 5×2 = 2 dummies = 2 soldiers → **~5 tiles per soldier** (matches the 125-tile / 24-capacity room ≈ 5.2). Foundation flooring adds +3.00%. Floor area itself does NOT drive capacity — a bigger empty room trains nobody.
 

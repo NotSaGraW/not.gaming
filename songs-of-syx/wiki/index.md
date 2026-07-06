@@ -25,6 +25,7 @@ cards — not authoritative.
 - [[combat-mechanics]] — military — damage math: sequential defenses compound (1/16 not 1/7); formation +1 = +1 def/block at ranks ≥5; flanking strips it
 - [[housing-and-priorities]] — population, efficiency, fulfillment — jobs first, closest home second; master > species > work-group priorities; job zoning IS housing zoning
 - [[health-and-disease]] — health, population — epidemics only below health 1; wells/physicians/lavatories by actual usage; hospitals treat, physicians don't
+- [[overlays]] — efficiency, logistics, health, fulfillment — the 17 in-game instruments; placement claims are judged by overlay, never by screenshot
 - [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
 
 ### strategy
