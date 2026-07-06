@@ -20,4 +20,8 @@ Education limit is measured in days with diminishing returns. The highest limit 
 - depends-on: [[natural-propagation]], [[admin-tech-points]]
 - see-also: —
 
-**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]]
+**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]], [[2026-07-06-gamedata-guide-notes]]
+
+## History
+
+- **2026-07-06 (game-data, dev manual Ch26):** the split quantified — max 100% education = **40% school (childhood-only) + 60% university**, confirming the two-track non-recoupable structure. Species have per-day learning rates (can be 0; schools use their own rate, not the species one). Effects are capital-wide per statistic. Education boosts research (including level-granted innovation) and diplomacy; indoctrination boosts happiness/loyalty.

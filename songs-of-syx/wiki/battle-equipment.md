@@ -50,3 +50,4 @@ Tooltip-measured values (v71, curator capture 2026-07-06). All bonuses per equip
 ## History
 
 - **2026-07-06 (measured):** card created from tooltip capture.
+- **2026-07-06 (game-data, dev manual Ch27/Ch30):** the formation stat's meaning defined — +1 formation = +1 defence AND block while cohesive (ranks ≥5); full damage math on [[combat-mechanics]]. Equipment: multiple items of one kind = quality levels with per-level diminishing returns, BUT doubling offense+defense together is superlinear; decay happens only while stationed on the world map; secondary weapon or shield assignable. Dev: training "extremely important... well-trained troops are significantly better and cost the same to equip and maintain" — corroborates this card's labeled inference about filling Training Grounds first.

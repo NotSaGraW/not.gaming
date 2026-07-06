@@ -20,4 +20,8 @@ Claims from #gameplay-q-and-a (2026-07-06):
 - depends-on: —
 - see-also: [[free-fetch]]
 
-**Source:** [[2026-07-06-discord-qanda-governing-slaves-health-growth]], [[2026-07-06-discord-chat-conscripts-emissaries-crypts-food]], [[2026-06-15-patchnote-v71-reign-of-terror]]
+**Source:** [[2026-07-06-discord-qanda-governing-slaves-health-growth]], [[2026-07-06-discord-chat-conscripts-emissaries-crypts-food]], [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-07-06-gamedata-guide-notes]]
+
+## History
+
+- **2026-07-06 (game-data, dev manual Ch23):** dev-stated confirmation of the community claim — unburied corpses are "very detrimental to the health of a city and their removal should be a priority after disasters." The corpses-cause-it / any-removal-equal model holds; the crypt distance question stays open.

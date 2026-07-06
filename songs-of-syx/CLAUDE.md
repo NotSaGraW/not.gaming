@@ -33,12 +33,13 @@ outrank community claims.
 
 Accepted origins, in trust order:
 
-1. `game-data` — the game's own init files, trimmed + versioned copies in
-   `source/gamedata-<version>/` (init/, base-data/, base-txt/, mods/;
-   local-only/gitignored, ~1 MB per version). Keep old versions — diffing
-   `gamedata-v71/` vs `gamedata-v72/` reveals every balance change
-   mechanically. Authoritative for *parameters*; says nothing about emergent
-   runtime behavior.
+1. `game-data` — the game's own files, trimmed + versioned copies in
+   `source/gamedata-<version>/`, **replicating the install's structure
+   exactly** (`data/assets/init/`, `data/assets/text/`, `base/data/`,
+   `base/txt/`, `mods/`; art/audio excluded; local-only/gitignored, ~2 MB per
+   version). Never invent a layout — identical structure is what makes
+   cross-version diffs mechanical. Keep old versions forever. Authoritative
+   for *parameters*; says nothing about emergent runtime behavior.
 2. `test` — curator's own in-game measurements (game version, map conditions,
    and observed numbers recorded). Authoritative for *behavior*.
 3. `patchnote` — official release notes.

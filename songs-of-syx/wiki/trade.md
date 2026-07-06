@@ -24,4 +24,8 @@ Goal of the refactor: **every industry viable late game** (bread was the worst o
 - depends-on: [[tech-tree]]
 - see-also: [[embassy-emissaries]], [[free-fetch]]
 
-**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]]
+**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]], [[2026-07-06-gamedata-guide-notes]]
+
+## History
+
+- **2026-07-06 (game-data, dev manual Ch17):** mechanics detailed — **tolls** are flat per-item, scale with capital-to-capital distance, hit cheap goods hardest, reduced by building roads in your regions; **tariffs** tax the value added in the last production step, reduced by better formal relations (vassal/overlord/ally best prices). Manual trade always available (goods land at the throne without depots); automatic trade needs a trade agreement + depots and gets better prices. Import depots buy cheapest-first daily with optional price/treasury caps; export depots sell daily, items inside inaccessible to your own city. AI empires run real production simulations — heavy one-sided trading moves prices against you; diversify.

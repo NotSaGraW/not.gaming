@@ -20,6 +20,11 @@ cards — not authoritative.
 - [[embassy-emissaries]] — trade, admin — RESOLVED: embassy tech EMBA0 exists (ADMIN tree, 5 lvls, Knowledge, +20%/lvl from game data)
 - [[conscripts]] — military — 70% training setting; division size 50 (measured); army-depot supply chain; "armies are smaller" needs primary source
 - [[brawls]] — loyalty, health, fulfillment — who brawls with whom; guards separate races (0.71.40 hotfix); per-pair race friction values in race files
+- [[production-math]] — industry, efficiency, logistics — the formula: multipliers (dominant: degradation/efficiency/species) vs additives (tools/tech/education); specialize early
+- [[logistics-system]] — logistics, efficiency — warehouses/haulers/stations/pull-push orders; plan by radius and orders, not adjacency
+- [[combat-mechanics]] — military — damage math: sequential defenses compound (1/16 not 1/7); formation +1 = +1 def/block at ranks ≥5; flanking strips it
+- [[housing-and-priorities]] — population, efficiency, fulfillment — jobs first, closest home second; master > species > work-group priorities; job zoning IS housing zoning
+- [[health-and-disease]] — health, population — epidemics only below health 1; wells/physicians/lavatories by actual usage; hospitals treat, physicians don't
 - [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
 
 ### strategy

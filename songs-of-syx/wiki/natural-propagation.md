@@ -22,3 +22,7 @@ Dev intent: the game becomes "a game where you struggle to keep up with your gro
 - see-also: [[accidents-and-nurseries]], [[education]], [[population-thresholds]]
 
 **Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]]
+
+## History
+
+- **2026-07-06 (contradiction noted):** the in-game manual's Ch10 still describes the **pre-v71 breeder system** ("nurseries are rooms which produce babies", "reproduction capability" beds) — contradicts the v71 patch notes this card is built on. Patch notes win (newer, explicit "replaced"). Treat guide Ch10 population claims as stale until the manual is updated; the immigration mechanics in that chapter (happiness-gated, occurrence-scaled, speed-capped, double-click/right-click UI) are not contradicted and likely current.

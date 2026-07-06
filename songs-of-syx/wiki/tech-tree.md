@@ -17,4 +17,8 @@ Education is the main tech engine now; limits on techs existed since v70 ("Limit
 - depends-on: [[admin-tech-points]]
 - see-also: [[education]], [[trade]]
 
-**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]], [[2025-12-04-patchnote-v70-riders-of-doom]]
+**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]], [[2025-12-04-patchnote-v70-riders-of-doom]], [[2026-07-06-gamedata-guide-notes]]
+
+## History
+
+- **2026-07-06 (game-data, dev manual Ch16):** research points **decay** (level-granted points don't); production eventually equals decay. Falling below required points weakens **all** techs and can make tech-dependent rooms unmaintainable. Labs consume clay (innovation), libraries leather (knowledge); both have large experience modifiers — researcher output compounds with headcount. Refunding freezes points temporarily. Tech production boosts are additive — see [[production-math]] for why that matters less than efficiency/degradation.

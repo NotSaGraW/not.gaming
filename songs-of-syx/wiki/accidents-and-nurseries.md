@@ -18,3 +18,7 @@ Community assessment (2026-07-06, #gameplay-q-and-a, two regulars): nurseries do
 - see-also: [[population-thresholds]]
 
 **Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-07-06-discord-qanda-governing-slaves-health-growth]]
+
+## History
+
+- **2026-07-06 (contradiction noted):** dev manual Ch10 still describes old-style nurseries (see [[natural-propagation]] History) — ignore it for this card; the v71 global-nursery model from patch notes stands.

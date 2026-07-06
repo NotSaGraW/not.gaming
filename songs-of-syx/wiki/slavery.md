@@ -21,4 +21,8 @@ Slave uprisings replace runaways (v71 announcement summary): unhappy slaves rebe
 - depends-on: [[law-and-order]]
 - see-also: —
 
-**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]], [[2026-07-06-discord-qanda-governing-slaves-health-growth]], [[2026-07-06-discord-chat-conscripts-emissaries-crypts-food]]
+**Source:** [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-06-15-devlog-v71-feature-breakdown]], [[2026-07-06-discord-qanda-governing-slaves-health-growth]], [[2026-07-06-discord-chat-conscripts-emissaries-crypts-food]], [[2026-07-06-gamedata-guide-notes]]
+
+## History
+
+- **2026-07-06 (game-data, dev manual Ch19):** slave differences enumerated — submission instead of happiness; can't commit crimes, no insanity, far fewer services, less furniture, no education/indoctrination, auto-assigned to mass graves/cannibals on death, can't join divisions, deaths never "wrongful", don't affect "others" fulfillment, **do not cause brawls** (confirms the community rule). **Submission < 80% risks revolts**; submission drops as slave share of population grows; raised by religion, nobles, decorations, soldier presence. Owning slaves worsens relations with rulers of the enslaved species.

@@ -12,7 +12,7 @@ status: verified
 
 **RESOLVED 2026-07-06 via game data — the tech exists.**
 
-`EMBA0` in the ADMIN tech tree (v71 files): 5 levels, costs Civic Knowledge (5 base, +5 per level), no prerequisites, each level `ROOM_EMBASSY>ADD: 0.2` → +20% embassy output per level, +100% at max. See [[2026-07-06-gamedata-embassy-tech]].
+`EMBA0` in the ADMIN tech tree (v71 files): in-game name **"Embassy"** — "Unlocks a place that lets us improve relations with other factions and manipulate their courts" (`text/tech/ADMIN.txt`). 5 levels, costs Civic Knowledge (5 base, +5 per level), no prerequisites, each level `ROOM_EMBASSY>ADD: 0.2` → +20% embassy output per level, +100% at max. See [[2026-07-06-gamedata-embassy-tech]].
 
 Original dispute, kept for the record:
 
@@ -28,3 +28,4 @@ Original dispute, kept for the record:
 ## History
 
 - **2026-07-06 (game-data):** dispute resolved by reading `tech/ADMIN.txt` from the v71 install. Claim A confirmed (tech exists, costs Knowledge); Claim B's "can't find anything" explained — it sits in the ADMIN tree. Status disputed → verified; evidence → game-data. Races with embassy references in init files: Cretonian, Garthimi, Human, Amevia, Tilapi — unexplored, possible race-specific embassy interactions.
+- **2026-07-06 (game-data, dev manual Ch20):** emissary actions are flatter / sabotage / assassinate — flattery and sabotage move opinion; assassination is a per-day attempt chance, and failures lower future success odds. Opinion levers beyond emissaries: chivalry, technology, kinship, kin treatment, gifts (gift value scales with the receiver's wealth). Original Discord question ("get more out of my emissaries") thus has three answers: the Embassy tech, gifts (cloth/jewelry/sithilon), and targeting rulers where kinship multiplies.

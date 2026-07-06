@@ -19,4 +19,8 @@ Region taxes are automatic, dependent on buildings in regions; most goods sent d
 - depends-on: —
 - see-also: [[population-thresholds]]
 
-**Source:** [[2026-07-06-discord-qanda-governing-slaves-health-growth]], [[2026-06-15-patchnote-v71-reign-of-terror]]
+**Source:** [[2026-07-06-discord-qanda-governing-slaves-health-growth]], [[2026-06-15-patchnote-v71-reign-of-terror]], [[2026-07-06-gamedata-guide-notes]]
+
+## History
+
+- **2026-07-06 (game-data, dev manual Ch24/31):** structure corroborated — gov points are a global resource produced by nobles assigned to region management; spent on the city-hall building chain, which generates the workforce for region construction. Region rebellion requires majority-species loyalty < 0 sustained (no need to please every species). The community's exact numbers (5 start / +20 governor / +40 promotion) remain community-evidence.
