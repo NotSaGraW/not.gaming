@@ -1,6 +1,5 @@
 ---
 id: governing-points
-name: Governing points (regions)
 category: mechanic
 affects: [admin, population]
 version: v71
@@ -10,11 +9,23 @@ status: open
 
 # Governing points (regions)
 
-Numbers from a community regular (#gameplay-q-and-a, 2026-07-06): you start with **5** governing points; **+20** per noble assigned as governor; **+40** per noble promotion; late game, +9 nobles give **380 points each**. Without points, conquered regions can't build anything — a common trap after early conquest.
+Governing points let conquered regions build — without them a region can't build anything,
+a common trap after early conquest. Sources (community regular, #gameplay-q-and-a
+2026-07-06):
 
-"Developing nations is hard until you get promotions at pop 1500" (same author) — see [[population-thresholds]].
+| Source | Points |
+|--------|--------|
+| Start | 5 |
+| Per noble governor | +20 |
+| Per noble promotion | +40 |
+| Late game (+9 nobles) | ~380 each |
 
-Region taxes are automatic, dependent on buildings in regions; most goods sent daily, farm products once a year like the capital (alpha-tester). Tax rate is replaced by "Squeeze" in v71: temporary resource surge at high devastation cost. *(patch-note)*
+"Developing nations is hard until you get promotions at pop 1500" (same author) — see
+[[population-thresholds]].
+
+Region taxes are automatic, dependent on buildings in the region; most goods are sent
+daily, farm products once a year like the capital (alpha-tester). Tax rate is replaced by
+**"Squeeze"** in v71: a temporary resource surge at high devastation cost. *(patch-note.)*
 
 - depends-on: —
 - see-also: [[population-thresholds]]
