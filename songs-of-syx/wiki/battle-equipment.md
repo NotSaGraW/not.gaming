@@ -1,6 +1,5 @@
 ---
 id: battle-equipment
-name: Battle equipment & training stats
 category: mechanic
 affects: [military, industry]
 version: v71
@@ -10,19 +9,20 @@ status: open
 
 # Battle equipment & training stats
 
-Tooltip-measured values (v71, curator capture 2026-07-06). All bonuses per equipment level/item as shown in the conscripts panel.
+Tooltip-measured values (v71, curator capture 2026-07-06). All bonuses per equipment
+level/item as shown in the conscripts panel.
 
 **Training (pool stats, from buildings):**
 
 | Training | Building | Effects |
-|---|---|---|
+|----------|----------|---------|
 | Melee | Training Grounds | Defence +100%, Offence +100%, Formation +1, Force +25%, Morale +4, Stamina +50% |
 | Archery | Archery Range | Skill: Bow +1 |
 
 **Armor & shield:**
 
 | Item | Pro | Contra |
-|---|---|---|
+|------|-----|--------|
 | Leather Armour | Force Absorption +25%, Slash Armour +3.5, Pierce Armour +1.25 | Speed −5% |
 | Plate Armour | Force Absorption +50%, Force Block +50%, Slash Armour +8, Pierce Armour +2 | Offence −20%, Speed −25%, Weight +50% |
 | Shield | Force Block +300% | — |
@@ -30,7 +30,7 @@ Tooltip-measured values (v71, curator capture 2026-07-06). All bonuses per equip
 **Weapons & mounts:**
 
 | Item | Pro | Contra |
-|---|---|---|
+|------|-----|--------|
 | Warhammer | Force +50%, Pierce Damage +3 | — |
 | Falcata | Offence +25%, Slash +1, Pierce +1 | — |
 | Flanx | Offence +100%, Slash +6, Charge +1 | (two-handed) |
@@ -38,9 +38,25 @@ Tooltip-measured values (v71, curator capture 2026-07-06). All bonuses per equip
 | War-Beast | Charge +2, Offence +25%, Speed +2.5, Weight +500 | Formation −100%, Defence −50% |
 | Bow | ranged (see below) | Speed −10%, wear −0.10/item/year |
 
-**Bow projectile scaling (From → To, presumably skill/training):** Range 119.4 → 197.4 tiles, Accuracy 0.8 → 1.0, Reload 30s → 3s, Max angle 50° → 75°, Force 14 → 18, Pierce Damage 4 → 12. Ammunition 40 per 24h. *(The From→To axis is inferred to be skill-dependent — not stated in tooltip. Flag: confirm what drives it.)*
+**Bow projectile scaling** (From → To, inferred skill/training-dependent):
 
-**Readings (cataloguer inference — NOT measured, do not inherit this card's evidence tier):** melee training is the single largest multiplier in the panel (+100% offence AND defence) — before optimizing equipment, fill Training Grounds. Spear (+5 formation) vs War-Beast (−100% formation) are opposite archetypes: formation infantry vs shock cavalry, matching v70's battle-engine design.
+| Stat | From | To |
+|------|------|----|
+| Range | 119.4 | 197.4 tiles |
+| Accuracy | 0.8 | 1.0 |
+| Reload | 30 s | 3 s |
+| Max angle | 50° | 75° |
+| Force | 14 | 18 |
+| Pierce damage | 4 | 12 |
+
+Ammunition 40 per 24 h. *(The From→To axis is inferred to be skill-dependent — not stated
+in the tooltip. Flag: confirm what drives it.)*
+
+**Readings (cataloguer inference — NOT measured, do not inherit this card's evidence
+tier):** melee training is the single largest multiplier in the panel (+100% offence AND
+defence) — before optimizing equipment, fill Training Grounds. Spear (+5 formation) vs
+War-Beast (−100% formation) are opposite archetypes: formation infantry vs shock cavalry,
+matching v70's battle-engine design.
 
 - depends-on: [[conscripts]]
 - see-also: [[law-and-order]] (equipment/training also improve guard law enforcement, per patch notes)

@@ -1,6 +1,5 @@
 ---
 id: brawls
-name: Brawls (causes & prevention)
 category: mechanic
 affects: [loyalty, health, fulfillment]
 version: v71
@@ -10,17 +9,39 @@ status: open
 
 # Brawls (causes & prevention)
 
-**Who brawls with whom** (alpha-tester, Discord 2026-07-06): citizens never brawl with slaves; citizens brawl with citizens of *other races*; slaves brawl with slaves of *other races*. → Single-race slave pools never brawl. *(evidence: community)*
+**Who brawls with whom** (alpha-tester, Discord 2026-07-06): citizens never brawl with
+slaves; citizens brawl with citizens of *other races*; slaves brawl with slaves of *other
+races* — so single-race slave pools never brawl. *(community.)*
 
-**Trigger condition** (wiki-gg "Brawls", edited 2026-06-26): housing brawls occur between species with **<100% mutual preference** whose homes are close. Mechanism: an aggressor checks for other species within **10 tiles of their own front door**; if the target is also within **48 tiles of its own home**, a brawl may occur → different-species housing entrances **>58 tiles apart** (entrance-to-entrance) should produce zero brawls. Distances are tile distance (chess-king/Chebyshev — octagons, not circles). Courtyards can keep outsiders beyond the R=10 zone (courtyard = enclosed entrance yard: house doors open onto a walled interior space with one opening, not onto a public street, so other species have no path within 10 tiles of the doors; removes routine traffic, not every possible visit). Damage roll claimed: `rand(0,1) × 0.25 × Force(attacker) / ForceAbsorption(defender) > 0.4`. Housing brawls ≠ the "Brawls!" riot event. *(evidence: wiki-gg — distance/formula constants are code-level, not in data files; testable in-game but unverified)*
+**Trigger** (wiki-gg "Brawls", edited 2026-06-26): housing brawls occur between species with
+**<100% mutual preference** whose homes are close. An aggressor checks for other species
+within **10 tiles** of its own front door; if the target is also within **48 tiles** of its
+own home, a brawl may occur — so different-species housing entrances **>58 tiles apart**
+(entrance-to-entrance) should produce zero brawls. Distances are Chebyshev (chess-king;
+octagons, not circles). Courtyards can keep outsiders beyond the 10-tile zone. Housing
+brawls ≠ the "Brawls!" riot event.
 
-**Preference values are game-data and asymmetric** — full matrix in [[2026-07-06-gamedata-race-preferences]]. The wiki page's one falsifiable example (Dondorian→Human 1.0 vs Human→Dondorian 0.75) **matches the race files exactly**, which corroborates the page's credibility. Standouts: Tilapi like nobody (0 toward Human/Dondorian); Amevia dislike everyone (~0.10); Dondorian↔Argonosh and Garthimi↔most are ~0.01–0.02 pairs; Human is the most tolerant race (0.75 default, 0.2 only toward Tilapi).
+Claimed damage roll (wiki-gg, code-level, unverified — testable in-game):
 
-**Prevention levers, v71 hotfix-confirmed:** guards separate citizens and slaves (0.71.40); children no longer brawl (0.71.41). *(game-data: hotfix notes)*
+```
+brawl if:  rand(0,1) × 0.25 × Force(attacker) / ForceAbsorption(defender) > 0.4
+```
 
-Death by brawl has a default happiness impact of 0.5 (vs 2 for murder/starvation) — `LEAVE_CAUSE.txt`. *(game-data)*
+**Preference values are game-data and asymmetric** — full matrix in
+[[2026-07-06-gamedata-race-preferences]]. The wiki page's one falsifiable example
+(Dondorian→Human 1.0 vs Human→Dondorian 0.75) **matches the race files exactly**. Standouts:
+Tilapi like nobody (0 toward Human/Dondorian); Amevia dislike everyone (~0.10);
+Dondorian↔Argonosh and Garthimi↔most are ~0.01–0.02 pairs; Human is the most tolerant
+(0.75 default, 0.2 only toward Tilapi).
 
-**Practical checklist:** single-race slave pools; check the preference matrix before mixing citizen races (a 0.75/1.0 pair is near-safe, a 0/0.02 pair is a fight club); keep different-species housing entrances >58 tiles apart or courtyard the approaches; station active-duty guards where races mix; stay ≥0.71.41.
+**Prevention (v71 hotfix-confirmed):** guards separate citizens and slaves (0.71.40);
+children no longer brawl (0.71.41). Death by brawl has a default happiness impact of 0.5
+(vs 2 for murder/starvation) — `LEAVE_CAUSE.txt`. *(game-data.)*
+
+**Checklist:** single-race slave pools; check the preference matrix before mixing citizen
+races (a 0.75/1.0 pair is near-safe, a 0/0.02 pair is a fight club); keep different-species
+housing entrances >58 tiles apart or courtyard the approaches; station active-duty guards
+where races mix; stay ≥0.71.41.
 
 - depends-on: [[law-and-order]]
 - see-also: [[slavery]], [[battle-equipment]] (Force / Force Absorption stats feed the claimed damage roll)

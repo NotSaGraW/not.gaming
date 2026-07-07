@@ -1,6 +1,5 @@
 ---
 id: trade
-name: Trade & economy (v71 refactor)
 category: mechanic
 affects: [trade, logistics, industry]
 version: v71
@@ -10,16 +9,24 @@ status: open
 
 # Trade & economy (v71 refactor)
 
-Goal of the refactor: **every industry viable late game** (bread was the worst offender before). Mechanisms:
+Goal of the refactor: **every industry viable late game** (bread was the worst offender
+before — high logistics overhead made it the worst export; now among the best). AI factions
+run "game theory" — they predict bad exports and under-invest, so local prices matter and
+each faction contributes to profit.
 
-- Tariffs work both ways as a % of goods price; **tolls** favor cheap goods, tariff upgrades favor expensive goods.
-- Every resource carries a **per-item logistics cost addition** (grain price raised to reflect transport). High-logistics goods (bread) trade dearer → exporting them earns more.
-- Trade caps removed; AI factions hoard excess ("game theory" — they predict bad exports and under-invest), so local prices matter and each faction contributes to profit.
-- Early trade is more expensive; late-game trade is situational and profitable.
-- Import grain → export bread is now viable; own-grain → bread is the most profitable but needs the deepest tech (consumption nodes, see [[tech-tree]]).
-- Emissary allocation "starts to matter a great deal" (see [[embassy-emissaries]]).
-- UI: green/red arrows show work-value of exports vs imports; fewer-arrow imports against more-arrow exports = profit.
-- Import depot capacity 250→600, export 200→500. Trade prices have more randomness to balance climate/race bonuses.
+| Lever | Effect |
+|-------|--------|
+| Tariffs | Both ways, as a % of goods price; tariff upgrades favour expensive goods. |
+| Tolls | A per-item logistics cost on every resource (grain price raised to reflect transport); toll upgrades favour cheap goods. |
+
+High-logistics goods (bread) trade dearer, so exporting them earns more. Trade caps are
+removed. Early trade is more expensive; late-game trade is situational and profitable.
+Import grain → export bread is viable; own-grain → bread is the most profitable but needs
+the deepest tech (consumption nodes, see [[tech-tree]]). Emissary allocation "starts to
+matter a great deal" ([[embassy-emissaries]]).
+
+Depot capacity (v71): import 250 → 600, export 200 → 500. UI: green/red arrows show export
+vs import work-value; fewer-arrow imports against more-arrow exports = profit.
 
 - depends-on: [[tech-tree]]
 - see-also: [[embassy-emissaries]], [[free-fetch]]

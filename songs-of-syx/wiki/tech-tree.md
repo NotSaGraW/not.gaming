@@ -1,6 +1,5 @@
 ---
 id: tech-tree
-name: Tech tree (v71 remake)
 category: mechanic
 affects: [admin, industry, trade]
 version: v71
@@ -10,9 +9,12 @@ status: open
 
 # Tech tree (v71 remake)
 
-Remade in v71: all techs **~50% cheaper**, common nodes removed, rooms with multiple recipes cost more. New **consumption nodes** per recipe sit at the end of each branch: upgrading them reduces input consumption (e.g. less grain per bread). Fully teched consumption is what makes import-raw/export-refined the most profitable play (see [[trade]]).
+Remade in v71: all techs **~50% cheaper**, common nodes removed, rooms with multiple
+recipes cost more. New **consumption nodes** per recipe sit at the end of each branch —
+upgrading them reduces input consumption (e.g. less grain per bread). Fully teched
+consumption is what makes import-raw / export-refined the most profitable play ([[trade]]).
 
-Education is the main tech engine now; limits on techs existed since v70 ("Limits on techs in tech tree", v70 notes).
+Education is the main tech engine now; tech limits have existed since v70.
 
 - depends-on: [[admin-tech-points]]
 - see-also: [[education]], [[trade]]
