@@ -1,6 +1,5 @@
 ---
 id: overlays
-name: Overlays (the in-game measurement layer)
 category: mechanic
 affects: [efficiency, logistics, health, fulfillment]
 version: v71
@@ -10,12 +9,16 @@ status: open
 
 # Overlays (the in-game measurement layer)
 
-The overlay menu (v71, curator screenshots 2026-07-06) is the game's instrumentation — the primary tool for verifying this wiki's claims against a live city. Available overlays: Foundation, Guard posts, Lighting, Moisture, Paint-Tool, Problem, Salt Water, Soil, Urbanisation, Fresh Water, Homeless, Maintenance, Noise, Path-Usage, Public Punishment, Shape, Space, Work-load.
+The overlay menu (v71, curator screenshots 2026-07-06) is the game's instrumentation — the
+primary tool for verifying this wiki's claims against a live city. Available overlays:
+Foundation, Guard posts, Lighting, Moisture, Paint-Tool, Problem, Salt Water, Soil,
+Urbanisation, Fresh Water, Homeless, Maintenance, Noise, Path-Usage, Public Punishment,
+Shape, Space, Work-load.
 
-Mapping to cards — which instrument tests what:
+Which instrument tests what:
 
 | Overlay | Verifies |
-|---|---|
+|---------|----------|
 | Noise | [[training-grounds]] / refiner placement — emission auras are compact, visible, per-source |
 | Path-Usage | [[logistics-system]] — actual traffic, not assumed traffic |
 | Maintenance | [[production-math]] degradation multiplier — pending jobs visible before decay bites |
@@ -27,7 +30,9 @@ Mapping to cards — which instrument tests what:
 | Work-load | staffing per room ([[production-math]] workload semantics) |
 | Problem | general fault finder |
 
-**Method rule (from a real correction):** layout and placement judgments are made from overlays, not from map screenshots. The cataloguer requests the relevant overlay before critiquing; the curator's overlay screenshot is a `test`-grade source.
+**Method rule (from a real correction):** layout and placement judgments are made from
+overlays, not from map screenshots. The cataloguer requests the relevant overlay before
+critiquing; the curator's overlay screenshot is a `test`-grade source.
 
 - depends-on: —
 - see-also: [[production-math]], [[logistics-system]], [[housing-and-priorities]]

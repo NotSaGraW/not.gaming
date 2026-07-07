@@ -9,8 +9,12 @@ status: verified
 
 # Production math (multipliers vs additives)
 
-The formula behind every industry (dev manual, Ch13): **base rate × all multipliers ×
-(1 + sum of all additives)** = rate per worker; × employees × workload = daily production.
+The formula behind every industry (dev manual, Ch13):
+
+```
+rate per worker  = base rate × all multipliers × (1 + sum of all additives)
+daily production = rate per worker × employees × workload
+```
 
 | Multiplicative (dominant) | Additive (diminishing as they stack) |
 |---------------------------|--------------------------------------|

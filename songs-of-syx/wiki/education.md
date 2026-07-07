@@ -1,6 +1,5 @@
 ---
 id: education
-name: Education (v71 overhaul)
 category: mechanic
 affects: [admin, population, loyalty]
 version: v71
@@ -10,12 +9,18 @@ status: open
 
 # Education (v71 overhaul)
 
-Two separate, non-interchangeable tracks:
+Two separate, non-interchangeable tracks (v71 patch notes):
 
-- **Child education (schools):** unique to childhood. When enabled, children stay in "child" status until they finish the configured days of school. **Cannot be recouped later** — an adult can't retroactively get child education.
-- **University education:** counted separately. Max education requires both.
+| Track | Rule |
+|-------|------|
+| Child education (schools) | Unique to childhood. When enabled, children stay in "child" status until they finish the configured days of school. Cannot be recouped later — an adult can't retroactively gain it. |
+| University education | Counted separately. Maximum education requires both tracks. |
 
-Education limit is measured in days with diminishing returns. The highest limit is tech-gated. Education **multiplies innovation, knowledge, and admin output** based on education level and room quality — it's now mainly a technology engine. Indoctrination increases loyalty. Speed/limit upgrades cost admin.
+Education limit is measured in days with diminishing returns (the highest limit is
+tech-gated). It **multiplies innovation, knowledge and admin output** based on education
+level and room quality — mainly a technology engine now. Indoctrination increases loyalty.
+Speed and limit upgrades cost admin. Max 100% = 40% school (childhood-only) + 60%
+university (dev manual Ch26).
 
 - depends-on: [[natural-propagation]], [[admin-tech-points]]
 - see-also: —

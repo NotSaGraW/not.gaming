@@ -1,6 +1,5 @@
 ---
 id: corpse-management
-name: Corpse management (graves, health, fulfillment)
 category: mechanic
 affects: [health, fulfillment, logistics]
 version: v71
@@ -10,12 +9,20 @@ status: open
 
 # Corpse management (graves, health, fulfillment)
 
-Claims from #gameplay-q-and-a (2026-07-06):
+Community claims (#gameplay-q-and-a, 2026-07-06): corpses themselves cause the health
+problem, so **any removal method is equal for health** (two regulars agree); graveyards
+add "cheap fulfillment" on top; mass graves are still needed for raider corpses. v71 patch
+notes: every citizen can bury corpses, but graveyards and tombs still need employees for
+*respect*.
 
-- **Corpses themselves cause the health problem**; any removal method is equal for health (two community regulars agree). Graveyards add "cheap fulfillment" on top. Mass graves still needed for raider corpses.
-- v71 patch notes: every citizen can bury corpses; graveyards and tombs still need employees for *respect*. *(patch-note)*
+Dev-confirmed (dev manual Ch23): unburied corpses are "very detrimental" to a city's
+health, and their removal is a priority after disasters.
 
-**Open question — crypt/graveyard distance penalty:** hedged community claim (#chat-and-discussions: "I don't think they have access penalties for range... or at least not much") that grave access has no/low range penalty, so one grandiose central crypt is fine. Unverified. **Flag: test in-game** — spread vs central crypts, compare fulfillment. This is the canonical example of a layout META circulating as a guess.
+**Open — crypt/graveyard distance penalty:** a hedged community claim
+(#chat-and-discussions: "I don't think they have access penalties for range... or at least
+not much") that grave access has little or no range penalty, so one grandiose central
+crypt is fine. Unverified. **Flag: test in-game** — spread vs central crypts, compare
+fulfillment. This is the canonical example of a layout META circulating as a guess.
 
 - depends-on: —
 - see-also: [[free-fetch]]

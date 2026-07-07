@@ -1,6 +1,5 @@
 ---
 id: accidents-and-nurseries
-name: Accidents & the global nursery
 category: mechanic
 affects: [health, population, fulfillment]
 version: v71
@@ -10,9 +9,16 @@ status: open
 
 # Accidents & the global nursery
 
-v71: accident rates reduced and **disabled below 150 employees**, scaling up exponentially with larger populations; tech mitigates. Old nurseries replaced by a **global nursery system**: children spend days there, greatly reducing accidents and child mortality, and providing fulfilment to both slaves and citizens.
+v71 (patch notes): accident rates are reduced and **disabled below 150 employees**, then
+scale up exponentially with larger populations; tech mitigates. The old nurseries became a
+single **global nursery** — children spend their days there, greatly reducing accidents and
+child mortality, and providing fulfilment to both slaves and citizens.
 
-Community assessment (2026-07-06, #gameplay-q-and-a, two regulars): nurseries don't reduce parenting time — they corral kids to prevent accidents; "accident rates in v71 are way too low to bother"; nurseries cost a lot of space/labor for what they do, but are "a zero input satisfaction booster". *(evidence: community — flag: verify accident scaling at high pop before dismissing nurseries.)*
+Community assessment (2026-07-06, #gameplay-q-and-a, two regulars): nurseries don't reduce
+parenting time — they corral kids to prevent accidents; "accident rates in v71 are way too
+low to bother"; nurseries cost a lot of space and labour for what they do, but are "a
+zero-input satisfaction booster". *(community — flag: verify accident scaling at high
+population before dismissing nurseries.)*
 
 - depends-on: [[natural-propagation]]
 - see-also: [[population-thresholds]]

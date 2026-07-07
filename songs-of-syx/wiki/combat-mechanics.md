@@ -23,9 +23,15 @@ hits are guaranteed.
 | Charges | Damage × attacker speed × charge stat; hard to evade, still blockable; very exhausting (faster units lose more stamina). |
 | Projectiles | Cannot be dodged; can be blocked (not from behind); dexterity is irrelevant against them. |
 
-**Defences apply in sequence, not summed.** 3 force-defence + 3 pierce-defence reduce
-incoming pierce to (1/4)×(1/4) = **1/16**, not 1/7 — layered defence compounds. Attacks
-from behind almost always bypass defence and block.
+**Defences apply in sequence, not summed** — layered defence compounds:
+
+```
+damage        = incoming / (Defence + 1)
+blocked       = incoming / (1 + block armor)
+3 force-def + 3 pierce-def:  incoming × (1/4) × (1/4) = 1/16   (not 1/7)
+```
+
+Attacks from behind almost always bypass defence and block.
 
 Equipment economics (Ch27): per-level gains diminish, but doubling offence *and* defence
 together is superlinear — mid-level balanced equipment beats maxing one stat. Equipment

@@ -148,6 +148,16 @@ example that motivated it so the mistake stays recognizable.
   [[pastures]]). LaTeX `$$` is optional for typeset math but renders only in Obsidian
   and on GitHub, not plain VS Code — the code block renders everywhere.
 
+- **Blank line before every table.** A table placed directly under a text line does not
+  render in Obsidian (or CommonMark) — it shows as literal pipes. Always leave an empty
+  line between prose and the table below it. (The Cantor/Argonosh work tables broke on
+  exactly this.)
+
+- **A new rule applies to the cards already written.** When a rule is added here, sweep
+  the existing cards for violations and fix them — don't leave the standard split across
+  old and new cards. (This formula rule sent us back to reformat production-math and
+  combat-mechanics.)
+
 Frontmatter working set: `category` · `status` · `version` · `source` (source as
 provenance *type*: `gamedata`/`patch`/`ingame`/`community`). `category` mirrors the
 game's domains (`species`, not "race"); `type` is a sub-bucket only where a domain is
