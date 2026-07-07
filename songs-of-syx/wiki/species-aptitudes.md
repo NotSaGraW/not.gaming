@@ -1,12 +1,10 @@
 ---
 id: species-aptitudes
-name: Species aptitudes (the two-channel model)
 category: mechanic
 affects: [industry, fulfillment, population]
 version: v71
 evidence: game-data
 status: verified
-source: gamedata-v71/data/assets/init/race/*.txt
 ---
 
 # Species aptitudes (the two-channel model)
@@ -52,6 +50,8 @@ types.
 - **Sentinels**: extreme values (WORK −10, −100; output ×2+) read as "hard barred /
   hard forced," not points on a continuous scale. Note `>ADD` operators mixed into
   BOOST are additive, not multiplicative (e.g. `ROOM_STOCKPILE>ADD`).
+- **Religion** is the same shape: a `RELIGION*>ADD` baseline plus per-god overrides,
+  computed as base `1.0` + modifier — presented as final per-god values on the cards.
 - **Two contexts**: `ROOM_*` governs capital rooms; a parallel `WORLD_BUILDING_*` set
   governs world-map camps (later-game expansion). Cards scope to `ROOM_*` unless noted.
 
@@ -64,3 +64,5 @@ Each species owns its own values: [[human]], [[cretonian]], [[dondorian]], [[gar
 
 - Blank-cell defaults [Likely], pending one in-game hover.
 - `WORLD_BUILDING_*` world-map production layer parked for a future card.
+
+**Source:** game-data — `init/race/*.txt` (all species files).

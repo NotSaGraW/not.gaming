@@ -13,7 +13,7 @@ cards — not authoritative.
 - [[admin-tech-points]] — admin, industry — admin repurposed as tech point producer; three point types: administration, innovation, knowledge
 - [[tech-tree]] — admin, industry, trade — v71 remake: ~50% cheaper, no common nodes, per-recipe consumption nodes
 - [[trade]] — trade, logistics, industry — v71 refactor: two-way tariffs, tolls, per-item logistics cost, no trade caps; every industry viable late
-- [[free-fetch]] — logistics, efficiency — all services free-fetch; carry capacity 4→7; warehouse-adjacency dogma obsolete
+- [[free-fetch]] — logistics, efficiency — all services free-fetch; carry capacity 4→7; warehouse-adjacency requirement gone
 - [[accidents-and-nurseries]] — health, population, fulfillment — accidents off <150 employees, exponential later; global nursery; community says skip early
 - [[corpse-management]] — health, fulfillment, logistics — corpse removal equal for health; graves add cheap fulfillment; crypt distance penalty UNVERIFIED (test)
 - [[governing-points]] — admin, population — start 5, +20/governor, +40/promotion; regions can't build without them; Squeeze replaces tax rate
@@ -25,7 +25,7 @@ cards — not authoritative.
 - [[combat-mechanics]] — military — damage math: sequential defenses compound (1/16 not 1/7); formation +1 = +1 def/block at ranks ≥5; flanking strips it
 - [[housing-and-priorities]] — population, efficiency, fulfillment — jobs first, closest home second; master > species > work-group priorities; job zoning IS housing zoning
 - [[health-and-disease]] — health, population — epidemics only below health 1; wells/physicians/lavatories by actual usage; hospitals treat, physicians don't
-- [[overlays]] — efficiency, logistics, health, fulfillment — the 17 in-game instruments; placement claims are judged by overlay, never by screenshot
+- [[overlays]] — efficiency, logistics, health, fulfillment — the in-game overlay instruments; placement claims are judged by overlay, never by screenshot
 - [[water-and-irrigation]] — food, efficiency, health — pumps on groundwater only, 100 pressure = 100 canal tiles; irrigation cost scales with distance → moisture only conditionally fixable
 - [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
 - [[species-aptitudes]] — industry, fulfillment, population — the two-channel model: PREFERRED.WORK (preference/fulfillment) vs BOOST.ROOM_*>MUL (production multiplier); both key on species not status

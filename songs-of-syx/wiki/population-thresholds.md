@@ -1,6 +1,5 @@
 ---
 id: population-thresholds
-name: Population thresholds (what unlocks/bites when)
 category: strategy
 affects: [population, military, health, admin]
 version: v71
@@ -10,18 +9,22 @@ status: open
 
 # Population thresholds (what unlocks/bites when)
 
-Synthesis card: the game changes character at known population gates. Plan runs around them instead of drifting.
+Synthesis card: the game changes character at known population gates. Plan runs around them
+instead of drifting.
 
 | Threshold | What happens | Evidence |
-|---|---|---|
+|-----------|--------------|----------|
 | < 150 employees | accidents disabled | patch-note |
 | < 200 pop | raiders hard-locked off | patch-note |
-| ~300 pop | practical cap of a hunting economy; good moment to pause growth and build militia + gear (community) | community |
-| 1500 pop | noble promotions unlock → region development becomes practical (community) | community |
+| ~300 pop | practical cap of a hunting economy; good moment to pause growth and build militia + gear | community |
+| 1500 pop | noble promotions unlock → region development becomes practical | community |
 
-Town max population is bounded by **area × moisture** of the chosen map spot; good spots reach town hall lv4–5 without extra growth bonuses; lv3+ town halls need admin tech (community). *(evidence: community)*
+Town max population is bounded by **area × moisture** of the chosen map spot; good spots
+reach town hall lv4–5 without extra growth bonuses; lv3+ town halls need admin tech.
+*(community.)*
 
-Growth recipe to 2500 (community): "Food → clothes → health, spam in this order; key resources clay and cut stone to upgrade services." *(evidence: community)*
+Growth recipe to 2500 (community): "Food → clothes → health, spam in this order; key
+resources clay and cut stone to upgrade services." *(community.)*
 
 - depends-on: —
 - see-also: [[governing-points]], [[food-harvest-cadence]], [[accidents-and-nurseries]], [[natural-propagation]]
