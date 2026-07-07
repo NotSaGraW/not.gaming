@@ -19,6 +19,7 @@ cards — not authoritative.
 - [[governing-points]] — admin, population — start 5, +20/governor, +40/promotion; regions can't build without them; Squeeze replaces tax rate
 - [[embassy-emissaries]] — trade, admin — RESOLVED: embassy tech EMBA0 exists (ADMIN tree, 5 lvls, Knowledge, +20%/lvl from game data)
 - [[conscripts]] — military — 70% training setting; division size 50 (measured); army-depot supply chain; "armies are smaller" needs primary source
+- [[raiders]] — military, trade — attracted by wealth (money + stored resources + slaves); deterrence lowers count/strength; killing permanent; raid-menu fields (measured)
 - [[brawls]] — loyalty, health, fulfillment — who brawls with whom; guards separate races (0.71.40 hotfix); per-pair race friction values in race files
 - [[production-math]] — industry, efficiency, logistics — the formula: multipliers (dominant: degradation/efficiency/species) vs additives (tools/tech/education); specialize early
 - [[logistics-system]] — logistics, efficiency — warehouses/haulers/stations/pull-push orders; plan by radius and orders, not adjacency
@@ -33,6 +34,7 @@ cards — not authoritative.
 ### strategy
 - [[population-thresholds]] — population, military, health, admin — the gates: 150 (accidents), 200 (raiders), ~300 (hunting cap), 1500 (promotions)
 - [[food-harvest-cadence]] — food, population — harvest cadence over food type: daily harvests self-buffer, annual harvests starve you
+- [[food-supply-diagnosis]] — food, logistics, population — days-of-food flat despite a surplus = decay of un-warehoused fast-decay food; fix with rations + warehouse reserve (measured)
 - [[dondorian-settlement]] — food, population — mountain-on-ocean fishmax; cold pastures pointless; tyrant Dondorians dev-flagged non-viable
 - [[run-setup-priorities]] — population, food, efficiency — plan deeply only race + region (frozen); the game flattened most other setup gradients; planning tool reserves skeletons
 
