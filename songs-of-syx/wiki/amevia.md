@@ -1,68 +1,125 @@
 ---
 id: amevia
-name: Amevia
-category: race
-version: v71
-evidence: game-data
+category: species
 status: verified
-source: gamedata-v71/data/assets/init/race/Q_AMEVIA.txt
-# --- dataview summary fields ---
-playable: true
-climate: hot
-terrain: coastal
-archetype: fisher
-strong: [fishing, clay, globdien-pasture]
-weak: [farming, orchards, general-pastures]
-refuses: []
-costs: [cold-intolerant, no-work-preferences]
+version: v71
+source: gamedata
 ---
 
 # Amevia
 
-Coastal/aquatic fishers (file `Q_AMEVIA`). A specialist economy built on water — and a
-data-light race: the file carries **no `WORK` preference block and no affinity block**.
+> Amevias love water and thrive when living surrounded by rivers and canals. They have an
+> insatiable desire for fish. They are generally good-natured but they greatly prefer to
+> be among their own kind. Amevia will fight against oppression and are not submissive.
+> They are unique in their ability to handle Globdein ranching.
+>
+> Amevias believe their true home is in the mythical Depths, which they cannot reach in
+> life as they are not fully aquatic. Since other species do not feel that pull, Amevias
+> regard them as soulless 'land-life'. Their size and natural armor make them formidable
+> soldiers, despite their apathy towards violence. Their lust for eggs has made them
+> masters of Globdein ranching, and their aquatic nature makes them excellent fishers.
 
-## Two channels (read separately)
+Playable. Challenge: Medium.
 
-Production is fully defined; preference is **absent** — Amevia lists no `PREFERRED.WORK`,
-so every job reads as neutral (0) by default. See [[species-aptitudes]]. Both channels
-key on species, not status ([[slavery]]).
+| Pros | Cons |
+|------|------|
+| Excellent at Fishing | Proximity to fresh water is very important |
+| Can ranch globdiens | Poor at farming |
+| Strong soldiers | Rebellious as slaves |
+| Wants mud or grand buildings | Hates all races besides the Tilapi |
+| | Slower breeding |
 
-## Production (capital rooms)
+## Basics
+| Field | Value |
+|-------|-------|
+| Size | 6 × 10 |
+| Baby / child days | 10 / 80 |
+| Slave price | 11 (recovery 0.25) |
 
-| Room | × |
+## Population multipliers
+| Climate | × |   | Terrain | × |
+|---------|---|---|---------|---|
+| Hot | 1.0 | | Wet | 1.5 |
+| Temperate | 0.5 | | Ocean | 1.5 |
+| Cold | 0.25 | |  |  |
+
+Max ×0.8, growth 0.05.
+
+## Production — capital rooms
+| ×    | Rooms |
+|------|-------|
+| 1.25 | Fishery |
+| 1.2  | Claypit, Globdien Pasture |
+| 1.0  | all unlisted |
+| 0.8  | Farms, Orchards, Pastures |
+
+## Production — world map
+| ×   | Structure |
+|-----|-----------|
+| 1.5 | Fishery camp |
+| 1.3 | Globdien camp |
+| 0.7 | Agriculture camp, Pasture camp |
+
+## Work preferences
+None defined — the file has no `WORK` block, so every job reads as neutral (0).
+
+## Physical
+| Stat | Value |
+|------|-------|
+| Death age | ×1.5 |
+| Mass | ×1.25 |
+| Hot resistance | +0.3 |
+| Cold resistance | −0.4 |
+
+## Combat
+| Stat | Value |
+|------|-------|
+| Blunt attack | +20 |
+| Offence skill | ×1.1 |
+| Defence skill | ×0.9 |
+| Pierce attack | +0.25 |
+
+## Behaviour
+| Stat | Value |
+|------|-------|
+| Sanity | ×1.5 |
+| Lawfulness | ×0.8 |
+| Submission | ×0.5 |
+
+## Service / need rates
+| Rate | Value |
+|------|-------|
+| Hunger | ×0.75 |
+| Arena | ×0.01 |
+
+## Religion — belief per god
+| God | Value |
+|-----|-------|
+| Crator | 1.0 |
+| Aminion | 0.5 |
+| Athuri | 0.5 |
+| Shmalor | 0.5 |
+
+## Fulfillment
+| Variable | Value |
+|----------|-------|
+| Food | Fish, Vegetable, Egg |
+| Drink | any |
+| Water access | citizen 3 · slave 2 |
+| Being among other species (disliked) | citizen 3 |
+| Stored fish | citizen 1 · noble 3 |
+| Stored egg (×0.25) | citizen 1 · noble 3 |
+| Sculpture monument (×4) | citizen 2 · slave 0.5 |
+| Skinny-dip service | citizen 1 · slave 0.25 |
+| Holding slaves | citizen 0.5 · noble 0.5 |
+
+## Affinity — toward other species
+None defined — the file has no `OTHER_RACES` block.
+
+## Build preferences
+Materials: none listed.
+| Road | × |
 |------|---|
-| Fishery | 1.25 |
-| Mine-Clay / Pasture-Globdien | 1.2 |
-| Farm / Orchard / Pasture (general) | 0.8 |
-
-A fishing race first; clay and Globdien pasture are secondary. Weak at land farming.
-Unlisted rooms ×1.0 [Likely].
-
-## Preference (likes / dislikes)
-
-None defined — the `WORK` block is empty, so there is no fulfillment steer or
-auto-assignment favour by job. [Likely] a deliberate "neutral preference" design, but
-flagged as a data gap rather than assumed.
-
-## Traits & costs
-
-- **Terrain wet ×1.5, ocean ×1.5** — an aquatic/coastal race; needs water.
-- **Climate hot ×1.0, temperate ×0.5, cold ×0.25** — warm-water; cold resistance −0.4.
-- **Death age ×1.5** — long-lived. Growth 0.05, pop cap ×0.8.
-- **Mass ×1.25, blunt attack +20, offence ×1.1** — heavy melee brawlers.
-- Sanity ×1.5, Lawfulness ×0.8, Submission ×0.5 — stable but wilful.
-
-## Preferences & affinities
-
-Food: fish, vegetable, egg. Build materials: none listed. Affinity block empty — how
-Amevia regards other races isn't in the file; other races' feelings toward Amevia live
-on their cards ([[human]] 0.75, [[dondorian]] 1.0, [[garthimi]] 1.0, [[cretonian]] 0.05).
-
-## Open
-
-- **No `WORK` preference block and no `OTHER_RACES` block** in the file — genuine data
-  gaps, not omissions on this card. Worth an in-game check of whether the UI shows any
-  job preference for Amevia.
-- Blank-cell defaults ([Likely] ×1.0 / 0) not spot-checked in game.
-- `WORLD_BUILDING_*` world-map layer parked (fishery ×1.5).
+| Decor (3) | 1.0 |
+| Stone Brick | 0.8 |
+| other | 0.25 |

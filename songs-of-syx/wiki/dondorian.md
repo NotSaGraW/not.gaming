@@ -1,70 +1,149 @@
 ---
 id: dondorian
-name: Dondorian
-category: race
-version: v71
-evidence: game-data
+category: species
 status: verified
-source: gamedata-v71/data/assets/init/race/DONDORIAN.txt
-# --- dataview summary fields ---
-playable: true
-climate: cold
-terrain: mountain
-archetype: craftsman-miner
-strong: [workshops, jewelry, smithy, mining]
-weak: [farming, orchards, academia]
-refuses: []
-costs: [non-reproducing, heat-intolerant]
+version: v71
+source: gamedata
 ---
 
 # Dondorian
 
-Mountain-dwelling craftsmen: the best workshop race, long-lived, and demand-driven —
-they barely reproduce, so you grow them by immigration, not birth.
+> Dondorians are sturdy and stubborn. Don't care much for farming, but excel at mining,
+> enjoy refinement, and are sturdy in battle.
+>
+> Dondorians aren't born, but created by the gods themselves, or so it is believed. They
+> pop into existence at the slopes of Mount Cerebus, already fully grown. From the moment
+> of their strange birth, their will and determination is set in stone. They live for
+> many hundreds of years and some are believed to have existed since the War of the Gods.
+> Their inborn knowledge and surety of hand makes them great crafters and good refiners,
+> and they have a knack for mining. Their heavy, stocky build is advantageous in warfare,
+> but their short stature complicates archery.
 
-## Two channels (read separately)
+Playable. Challenge: Hard.
 
-Preference vs production — general mechanic on [[species-aptitudes]]. Both key on
-species, not status ([[slavery]]).
+| Pros | Cons |
+|------|------|
+| Great at crafting, refining and mining | Poor farmers, except for mushrooms |
+| Strong melee soldiers | Terrible archers |
+| Wants caves and grand buildings | Terrible at learning |
+| | Hates Garthimi |
 
-## Production (capital rooms)
+## Basics
+| Field | Value |
+|-------|-------|
+| Size | 4 × 8 |
+| Reproduction | none (immigration only) |
+| Slave price | 12 (recovery 0.20) |
 
-| Room | × |
-|------|---|
-| Workshop-Smithy / Jewelry | 1.25 |
-| Workshop (general) | 1.20 |
-| Mine | 1.15 |
-| Refiner | 1.0 |
-| Farm | 0.75 |
-| Orchard | 0.65 |
-| School / University | 0 / 0.4 |
+## Population multipliers
+| Climate | × |   | Terrain | × |
+|---------|---|---|---------|---|
+| Cold | 1.0 | | Mountain | 5.5 |
+| Temperate | 0.8 | | Forest | 0.1 |
+| Hot | 0.1 | | Open | 0.1 |
 
-Craft-and-mine specialists; poor farmers and near-useless in schools. Note the
-mountain build affinity below makes them the natural carve-into-the-rock race.
+Max ×0.75, growth 0.02.
 
-## Preference (likes / dislikes)
+## Production — capital rooms
+| ×    | Rooms |
+|------|-------|
+| 1.25 | Smithy, Jeweller |
+| 1.20 | Workshops |
+| 1.15 | Mines |
+| 1.0  | Refiners, Mushroom Farm, all unlisted |
+| 0.85 | Pastures |
+| 0.8  | Bowyer |
+| 0.75 | Farms |
+| 0.65 | Orchards |
+| 0.4  | University |
+| 0    | School |
 
-Loves: **Tavern (+5.0)**, Jewelry (+2.5), Smithy (+2.0); carpenter, paper, brewery,
-hunter (+1.0). Mild dislikes: gem mining (−0.5), coaler (−0.25). Nothing hard-barred.
+Stockpile: +4 storage.
 
-## Traits & costs
+## Production — world map
+| ×    | Structure |
+|------|-----------|
+| 1.5  | Mine camp |
+| 0.85 | Pasture camp |
+| 0.5  | Agriculture camp |
 
-- **Reproduction speed ×0 + Immigration ×25** — Dondorians do **not** breed; the whole
-  population arrives by settlement. Plan growth around immigration, not nurseries.
-- **Death age ×1.8** — long-lived, so slow turnover once settled.
-- **Sanity ×5.0, Lawfulness ×1.0** — stable and orderly; low crime.
-- **Cold resistance +0.25, climate cold ×1.0 / hot ×0.1; terrain mountain ×5.5** — a
-  cold-mountain race, crippled on flatland or in heat.
-- Combat: Block ×1.25, formation +0.5 — solid defensive infantry; weak bows (×0.75).
+## Work preferences
+| Weight | Jobs |
+|--------|------|
+| +5.0  | Tavern |
+| +2.5  | Jeweller |
+| +2.0  | Smithy |
+| +1.0  | Brewery, Carpenter, Grand Arena, Hunter, Papermaker, Pottery, Temple of Athuri |
+| +0.75 | Administration, Bowyer, Crypt, Fight Pit, Guardpost, Sithilon Mine, Tailor, Training Ground |
+| +0.5  | Laboratory, Library, Market, Masonry, Mushroom Farm, Stage, University |
+| +0.25 | Balticrawler Breeder, Janitor, Massage Parlour, Metal Smelter |
+| 0.0   | Archery Range, Coal Mine, Ore Mine, Stone Mine |
+| −0.25 | Charcoaler |
+| −0.5  | Gem Mine |
 
-## Preferences & affinities
+## Physical
+| Stat | Value |
+|------|-------|
+| Death age | ×1.8 |
+| Mass | ×1.1 |
+| Reproduction speed | ×0 |
+| Cold resistance | +0.25 |
+| Hot resistance | −0.25 |
 
-Food: meat, fish, mushroom. Build materials: **Mountain (1.0)** — carved rooms — then
-Grand (0.6), Stone (0.3). Warm to [[human]], [[amevia]], [[cretonian]], [[cantor]]
-(1.0), [[tilapi]] (0.75); hostile to [[garthimi]] (0.02), [[argonosh]] (0.01). Pairs
-notably well with [[human]] (shared food/road/structure tastes).
+## Combat
+| Stat | Value |
+|------|-------|
+| Block | ×1.25 |
+| Formation skill | +0.5 |
+| Bow | ×0.75 |
 
-## Open
+## Behaviour
+| Stat | Value |
+|------|-------|
+| Sanity | ×5.0 |
+| Lawfulness | ×1.0 |
+| Submission | ×0.75 |
 
-- Blank-cell defaults ([Likely] ×1.0 / 0) not spot-checked in game.
-- `WORLD_BUILDING_*` world-map layer parked (mine ×1.5, agriculture ×0.5).
+## Civic
+| Stat | Value |
+|------|-------|
+| Immigration | ×25 |
+| Maintenance | +0.25 |
+
+## Religion — belief per god
+| God | Value |
+|-----|-------|
+| Athuri | 2.0 |
+| Aminion | 0.05 |
+| Crator | 0.05 |
+| Shmalor | 0.05 |
+
+## Fulfillment
+| Variable | Value |
+|----------|-------|
+| Food | Meat, Fish, Mushroom |
+| Drink | Piva |
+| Square rooms | citizen 1.0 · slave 0.5 · noble 1.5 |
+| Sculpture monument (×4) | citizen 1 · slave 0.25 · noble 0.5 |
+| Stored sithilon (×0.5) | citizen 1 · noble 1 |
+| Holding slaves | citizen 0.5 · noble 0.5 |
+| Noise (disliked, ×4) | citizen 0.5 |
+
+## Affinity — toward other species
+| Value | Species |
+|-------|---------|
+| 1.0  | Human, Amevia, Cretonian, Cantor |
+| 0.75 | Tilapi |
+| 0.02 | Garthimi |
+| 0.01 | Argonosh |
+
+Others toward Dondorian: 1.0.
+
+## Build preferences
+| Material | × |   | Road | × |
+|----------|---|---|------|---|
+| Mountain | 1.0 | | Decor (2) | 1.0 |
+| Grand | 0.6 | | Stone (2) | 0.8 |
+| Stone | 0.3 | | Stone (1) | 0.5 |
+| Outdoors | 0.2 | | other | 0.1 |
+| Wood | 0.1 | | | |

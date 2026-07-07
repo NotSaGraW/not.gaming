@@ -36,16 +36,15 @@ cards — not authoritative.
 - [[dondorian-settlement]] — food, population — mountain-on-ocean fishmax; cold pastures pointless; tyrant Dondorians dev-flagged non-viable
 - [[run-setup-priorities]] — population, food, efficiency — plan deeply only race + region (frozen); the game flattened most other setup gradients; planning tool reserves skeletons
 
-### race
-- [[human]] — scholar-generalist; temperate flatland; +50% education, +25% knowledge; worst sanity/lawfulness; immigration ×1.5
-- [[cretonian]] — pacifist farmer; best farms (+25%); docile & fast-breeding (slave stock); refuses hunting/fightpit; short-lived
-- [[dondorian]] — craftsman-miner; cold mountains; best workshops/jewelry/smithy; non-reproducing, immigration ×25; long-lived
-- [[garthimi]] — beast-miner; hot mountains; mining/mason/hunting + Balticrawler-only pasture ×3; bred not born; cannot govern
-- [[tilapi]] — forager-archer; forests; default herder, orchard/wood ×1.4, bows ×1.5; refuses all mining; misanthropic
-- [[amevia]] — fisher; coastal/aquatic; fishery ×1.25; no WORK/affinity data in file (gaps flagged)
-- [[cantor]] — non-playable haven titan; industrial ×2 everywhere but zero preference; physical monster; no immigration
-- [[argonosh]] — non-playable haven enforcer; no economy (ROOM* ×0.1); pure police/war caste
-- [[race-comparison]] — generated Dataview view (Obsidian-only, rebuilt from race cards, not authoritative)
+### species
+- [[human]] — playable; education ×1.5, knowledge ×1.25; temperate/open; immigration ×1.5
+- [[cretonian]] — playable; farm/orchard ×1.25; warm/open; growth 0.10, submission ×1.25
+- [[dondorian]] — playable; workshop ×1.2, jewelry/smithy ×1.25; cold mountains; immigration ×25, reproduction ×0
+- [[garthimi]] — playable; mine ×1.25, mason ×1.3, Pasture-Balti ×3.0; hot mountains; bred via Breeder room
+- [[tilapi]] — playable; orchard/woodcutter ×1.4, bow ×1.5; forest; mining −10 (barred)
+- [[amevia]] — playable; fishery ×1.25; wet/ocean; no WORK or OTHER_RACES block in file
+- [[cantor]] — non-playable (haven); mine/refiner/workshop/woodcutter ×2.0; no climate; immigration ×0
+- [[argonosh]] — non-playable (haven); barracks/archery ×1, other rooms ×0.1; immigration ×0
 
 ### building
 - [[training-grounds]] — military, efficiency — capacity = training dummies (+1 each, 2×2, need access gap; ~5 tiles/soldier, measured); emits noise

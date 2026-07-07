@@ -1,65 +1,117 @@
 ---
 id: argonosh
-name: Argonosh
-category: race
-version: v71
-evidence: game-data
+category: species
 status: verified
-source: gamedata-v71/data/assets/init/race/ARGONOSH.txt
-# --- dataview summary fields ---
-playable: false
-climate: none
-terrain: none
-archetype: enforcer
-strong: [policing, war]
-weak: [everything-economic]
-refuses: []
-costs: [haven-gated, no-immigration, no-economy]
+version: v71
+source: gamedata
 ---
 
 # Argonosh
 
-A non-playable **haven-gated** war race: no economy at all, built purely for policing
-and battle. The mirror of [[cantor]] — where Cantor is an industrial titan, Argonosh
-is a pure enforcer.
+> The Argonosh are a very ancient race, created by Aminion during the first war of the
+> gods. They are heavy, fast and deadly. They do not need much, but should also be kept
+> from work.
+>
+> During the first war of the gods, Aminion created the great queen of the Argonosh,
+> Shmalor, to do his bidding. She and her spawn served as shock troops in his armies —
+> creatures as tall and wide as a longhouse, devastating to the Astarii alliance. After
+> Aminion's imprisonment and Shmalor's slaying, what remained retreated into their burrows.
+> Their blood watered down over generations; the Argonosh living today are nothing like
+> those of old, but remain a formidable force on the battlefield if attracted to your cause.
 
-## Two channels (read separately)
+Non-playable (haven-gated). No climate/terrain profile; immigration ×0.
 
-`ROOM*>MUL: 0.1` — a blanket ×0.1 to all general room work, with only Barracks and
-Archery at ×1. `PREFERRED.WORK` is `*: 0` plus Police (+10), Guard (+1), Execution (+1).
-Argonosh neither likes nor produces economic work. See [[species-aptitudes]]; both
-channels key on species, not status ([[slavery]]).
+## Basics
+| Field | Value |
+|-------|-------|
+| Size | 12 × 13 |
+| Reproduction | none |
+| Slave price | 1 |
 
-## Production (capital rooms)
+## Production — capital rooms
+| ×   | Rooms |
+|-----|-------|
+| 1.0 | Training Ground, Archery Range |
+| 0.5 | Stockpile |
+| 0.1 | all other rooms |
+| 0   | School, University |
 
-| Room | × |
-|------|---|
-| Barracks / Archery | 1.0 |
-| Stockpile | 0.5 |
-| School / University | 0 |
-| everything else (`ROOM*`) | 0.1 |
+## Work preferences
+Default 0 for all jobs, except:
+| Weight | Jobs |
+|--------|------|
+| +10.0  | Secret Police |
+| +1.0   | Guardpost, Execution |
 
-No civilian economy. Use them as garrison and law, not labour.
+## Physical
+| Stat | Value |
+|------|-------|
+| Health | ×3.0 |
+| Death age | ×5.0 |
+| Speed | ×2.0 |
+| Mass | +160 |
+| Acceleration | ×0.75 |
+| Hot resistance | +0.5 |
+| Reproduction speed | ×0 |
 
-## Preference (likes / dislikes)
+## Combat
+| Stat | Value |
+|------|-------|
+| Blunt attack | +240 |
+| Blunt defence | +120 |
+| Pierce defence | +2.0 |
+| Pierce attack | +1.0 |
+| Morale | ×3.0 |
+| Bow | ×0.0 |
 
-Police (+10), Guard (+1), Execution (+1); everything else 0. A living enforcement caste.
+## Behaviour
+| Stat | Value |
+|------|-------|
+| Sanity | ×1000 |
+| Lawfulness | ×5.0 |
+| Submission | ×0.3 |
 
-## Traits & costs
+## Civic
+| Stat | Value |
+|------|-------|
+| Immigration | ×0 |
 
-- **Not playable; Immigration ×0** — acquired via havens, not grown. Reproduction speed ×0.
-- **War build:** Health ×3, Mass +160, Speed ×2, Blunt attack +240 / defence +120,
-  Morale ×3, Pierce defence +2 — fast, heavy shock troops. Weak bows (×0).
-- **Lawfulness ×5, Sanity ×1000, Submission ×0.3** — fanatically orderly, hard to break.
-- No climate/terrain profile in the file. Religion Shmalor.
+## Service / need rates
+| Rate | Value |
+|------|-------|
+| Temple | ×4.0 |
+| Hunger | ×2.0 |
 
-## Preferences & affinities
+## Religion — belief per god
+| God | Value |
+|-----|-------|
+| Shmalor | 6.0 |
+| Aminion | 0 |
+| Athuri | 0 |
+| Crator | 0 |
 
-Food: meat, fish, egg. Build materials: Mountain (1.0), Stone (0.6). Warm to
-[[garthimi]], [[human]], [[cretonian]], [[amevia]] (1.0); hostile to [[cantor]],
-[[tilapi]], [[dondorian]] (0.01).
+## Fulfillment
+| Variable | Value |
+|----------|-------|
+| Food | Meat, Fish, Egg |
+| Drink | any |
+| Food Stall | citizen 2.5 |
+| Fight Pit | citizen 2 |
+| Tavern | citizen 1.5 |
+| Restaurant | citizen 1.0 |
+| Crypt burial | citizen 1.0 |
+| Well, Hearth | citizen 1 |
 
-## Open
+## Affinity — toward other species
+| Value | Species |
+|-------|---------|
+| 1.0  | Garthimi, Human, Cretonian, Amevia |
+| 0.01 | Cantor, Tilapi, Dondorian |
 
-- Haven-acquisition requirements not yet carded (see havens / world layer).
-- Climate/economy absent by design; blank defaults [Likely], not verified in game.
+## Build preferences
+| Material | × |   | Road | × |
+|----------|---|---|------|---|
+| Mountain | 1.0 | | Dark (3) | 1.0 |
+| Stone | 0.6 | | Dark (2) | 0.8 |
+| Grand | 0.3 | | Dark (1) | 0.5 |
+| Wood | 0 | | other | 0.1 |

@@ -75,7 +75,7 @@ Each card carries:
 
 - **id** — stable slug, never renamed. All links point to this.
 - **name** — human-readable display name.
-- **category** — exactly one of: `mechanic` | `race` | `building` | `strategy`
+- **category** — exactly one of: `mechanic` | `species` | `building` | `strategy`
   | `event` | `reference`. If a card wants two, split the card. `reference` is
   for generated, non-authoritative views (e.g. a Dataview table rebuilt from
   other cards) — same status as `index.md`; owns no facts of its own.
@@ -106,6 +106,48 @@ Each card carries:
 Rich detail (procedure, caveats, edge cases) is added on demand when a card is
 queried, not on ingest. Updates append to a `## History` section on the card —
 never overwrite prior claims (method rule 10).
+
+## Card authoring
+
+How a card body is written. Earned from repeated mistakes; each rule keeps the
+example that motivated it so the mistake stays recognizable.
+
+- **Names: the in-game display name, never the file token.** Tokens mislead —
+  `TOMB_NORMAL` is "Crypt", `ALCO_WINE` is "Shedeh", `COTTON` is "Fibre",
+  `PLEASURE_NORMAL` is "Massage Parlour", `PASTURE_BALTI` is "Balticrawler Breeder".
+  Map every token through the `NAME:` field in `text/room/`, `text/resource/`,
+  `text/animal/` before it reaches a card.
+
+- **Words: the game's text, not the cataloguer's.** A species card's prose is the
+  in-game `DESC`/`DESC_LONG` plus the game's own `PROS`/`CONS` (`text/race/`); a
+  mechanic card's prose is the matching `GUIDE.txt` chapter. The cataloguer adds no
+  description, no framing, no "what this card is" preamble.
+
+- **No editorializing; no superlative without proof.** "Premier archers", "best
+  workshop race", "the forgiving starter" are opinion stated as fact — banned. A
+  comparative claim requires checking every candidate first: "Humans draw settlers
+  faster than any race" was false — Dondorians immigrate ×25 to Humans' ×1.5.
+
+- **Data in tables; prose only for genuine explanation.** Entity cards (species,
+  buildings, goods) are almost all tables. Mechanic cards carry explanatory prose but
+  still tabulate any actual numbers. Group and sort tables by value.
+
+- **A distribution is a table, never a collapsed label.** Anything shaped as a
+  wildcard baseline plus named overrides is a set of values, not one category.
+  "Religion: Crator" was wrong — the file is `RELIGION*>ADD: -0.9` with `CRATOR: 0`,
+  i.e. every god at a value. Terrain is a per-tile thriving multiplier, not a habitat.
+  Where the file stores a modifier, compute the value the game shows: religion belief
+  = base `1.0` + modifier (Crator 1.0, others 0.1).
+
+- **Never invent meaning.** If a block's effect isn't understood (a raw `STATS`
+  weight, the `RESOURCE` yield) flag it or omit it — do not guess a purpose.
+
+Frontmatter working set: `category` · `status` · `version` · `source` (source as
+provenance *type*: `gamedata`/`patch`/`ingame`/`community`). `category` mirrors the
+game's domains (`species`, not "race"); `type` is a sub-bucket only where a domain is
+large and self-grouping (e.g. buildings). `evidence` is now optional (source-as-type
+carries provenance; lint only checks it when present); `name`/`affects` are still an
+open question. The species layer omits all three.
 
 ## Operations
 

@@ -1,68 +1,146 @@
 ---
 id: cretonian
-name: Cretonian
-category: race
-version: v71
-evidence: game-data
+category: species
 status: verified
-source: gamedata-v71/data/assets/init/race/CRETONIAN.txt
-# --- dataview summary fields ---
-playable: true
-climate: warm
-terrain: flatland
-archetype: pacifist-farmer
-strong: [farming, orchards, rations, refining]
-weak: [academia, workshops, combat]
-refuses: [hunting, fightpit, arena]
-costs: [short-lived, pacifist, cold-intolerant]
+version: v71
+source: gamedata
 ---
 
 # Cretonian
 
-The farm race, and the classic labour/slave stock: docile, fast-breeding, and averse
-to violence. Best food producer in the game, poor at everything cerebral or martial.
+> Cretonians excel at farming and thrive in temperate and warm climates, preferably
+> close to water. They are vegetarians and prefer harmony and wooden structures.
+>
+> Cretonians are the children of Crator, god of growth, who taught them much about
+> agriculture. They are vegetarians and in tune with the land in which they live. Their
+> peaceful ways and lack of combat prowess have led to them losing many of their
+> ancestral lands. They prefer wooden structures, harmony, and farming work. They do not
+> mind monotonous labor which makes them well suited to refining jobs.
 
-## Two channels (read separately)
+Playable. Challenge: Easy.
 
-Preference (`PREFERRED.WORK`) vs production (`BOOST.ROOM_*>MUL`) — general mechanic on
-[[species-aptitudes]]. Both key on species, not status ([[slavery]]).
+| Pros | Cons |
+|------|------|
+| Excellent farmers | Terrible at crafting |
+| Law abiding citizens | Second-rate soldiers |
+| Enjoys food and drink services | Hates Garthimi and Amevia |
+| Wants wooden buildings and decorative trees | |
 
-## Production (capital rooms)
+## Basics
+| Field | Value |
+|-------|-------|
+| Size | 5 × 9 |
+| Baby / child days | 8 / 48 |
+| Slave price | 7.5 (recovery 0.5) |
 
-| Room | × |
-|------|---|
-| Farm / Orchard | 1.25 |
-| Workshop-Ration | 1.2 |
-| Refiner | 1.1 |
-| Workshop (general) | 0.8 |
-| School / University | 0.5 |
+## Population multipliers
+| Climate | × |   | Terrain | × |
+|---------|---|---|---------|---|
+| Temperate | 1.0 | | Open | 1.0 |
+| Hot | 1.0 | | Forest | 0.2 |
+| Cold | 0.2 | | Wet | 0.2 |
+|  |  | | Mountain | 0.1 |
 
-Best farm multiplier of any race (+25%, vs [[human]]'s +10%). Weak at crafts and half
-as effective in education. Unlisted rooms ×1.0 [Likely].
+Max ×1.0, growth 0.10.
 
-## Preference (likes / dislikes)
+## Production — capital rooms
+| ×    | Rooms |
+|------|-------|
+| 1.25 | Farms, Orchards |
+| 1.2  | Rationmaker |
+| 1.1  | Refiners |
+| 1.0  | all unlisted |
+| 0.8  | Workshops |
+| 0.5  | School, University |
 
-Loves: Inn, Embassy (+3.0); Orchard, Canteen, Eatery, Workshop-Ration (+2.0); grain,
-fruit, veg farming (+1.5). Refuses: **hunting (−4.0), fightpit (−3.0), arena (−2.0)** —
-a pacifist by disposition. Mild dislikes: smithy, archery, police (−0.25).
+## Production — world map
+| ×    | Structure |
+|------|-----------|
+| 1.5  | Agriculture camp |
+| 0.75 | Mine camp |
 
-## Traits & costs
+## Work preferences
+| Weight | Jobs |
+|--------|------|
+| +3.0  | Embassy, Inn |
+| +2.0  | Food Stall, Fruit Orchard, Rationmaker, Restaurant |
+| +1.5  | Fruit Farm, Grain Farm, Vegetable Farm |
+| +1.25 | Herb Farm, Mushroom Farm |
+| +1.0  | Brewery, Cotton Farm, Daycare, Opiate Farm, Physician, Temple of Crator |
+| +0.75 | Administration, Asylum, Hospital, Pottery, School, Weaver |
+| +0.5  | Bakery |
+| +0.25 | Bowyer |
+| 0.0   | Claypit, Fishery, Garthimi Breeder |
+| −0.25 | Archery Range, Balticrawler Breeder, Secret Police, Smithy |
+| −0.5  | Training Ground |
+| −2.0  | Grand Arena |
+| −3.0  | Fight Pit |
+| −4.0  | Hunter |
 
-- **Growth 0.10, Submission ×1.25** — breed fast and obey; the reason they are the
-  default slave/labour race ([[slavery]]).
-- **Death age ×0.75** — short-lived; high turnover offsets the fast breeding.
-- **Combat ×0.9 skill, Morale ×0.75** — weak soldiers; keep them off the line.
-- **Cold resistance −0.25, climate cold ×0.2** — a warm/temperate race; useless in
-  the cold. Immigration ×0.4 (low draw — they grow by birth, not settlement).
-- Lawfulness +0.5 — law-abiding; low crime.
+## Physical
+| Stat | Value |
+|------|-------|
+| Death age | ×0.75 |
+| Mass | ×0.9 |
+| Cold resistance | −0.25 |
 
-## Preferences & affinities
+## Combat
+| Stat | Value |
+|------|-------|
+| Blunt attack | +10 |
+| Offence skill | ×0.9 |
+| Defence skill | ×0.9 |
+| Morale | ×0.75 |
 
-Food: vegetable, bread, fruit. Build materials: Wood (1.0), Outdoors (1.0) — plain
-builders. Warm to [[cantor]] (1.0), [[tilapi]], [[dondorian]] (0.75); cool to [[human]]
-(0.2); hostile to [[amevia]] (0.05), [[garthimi]] (0.02), [[argonosh]] (0).
+## Behaviour
+| Stat | Value |
+|------|-------|
+| Submission | ×1.25 |
+| Lawfulness | +0.5 |
 
-## Open
+## Civic
+| Stat | Value |
+|------|-------|
+| Immigration | ×0.4 |
 
-- Blank-cell defaults ([Likely] ×1.0 / 0) not spot-checked in game.
-- `WORLD_BUILDING_*` world-map layer parked (agriculture ×1.5, mine ×0.75).
+## Religion — belief per god
+| God | Value |
+|-----|-------|
+| Crator | 2.0 |
+| Aminion | 0.1 |
+| Athuri | 0.1 |
+| Shmalor | 0.1 |
+
+## Fulfillment
+| Variable | Value |
+|----------|-------|
+| Food | Vegetable, Bread, Fruit |
+| Drink | any |
+| Temple | citizen 4 · noble 3 · slave 2 |
+| Tavern | citizen 3 · noble 1 |
+| Stored rations (×0.05) | citizen 2 · noble 1 |
+| Round rooms | citizen 1 · slave 0.5 · noble 1.5 |
+| Food Stall | citizen 1.0 |
+| Dislikes own enslavement | citizen 1.5 |
+| Space | citizen 0.5 |
+
+## Affinity — toward other species
+| Value | Species |
+|-------|---------|
+| 1.0  | Cantor |
+| 0.75 | Tilapi, Dondorian |
+| 0.2  | Human |
+| 0.05 | Amevia |
+| 0.02 | Garthimi |
+| 0    | Argonosh |
+
+Others toward Cretonian: 1.0.
+
+## Build preferences
+| Material | × |   | Road | × |
+|----------|---|---|------|---|
+| Wood | 1.0 | | Nature (2) | 1.0 |
+| Outdoors | 1.0 | | Nature (1) | 0.8 |
+| Stone | 0.5 | | Dirt | 0.5 |
+| Grand | 0.3 | | other | 0.1 |
+| Mountain | 0 | | | |

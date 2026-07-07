@@ -11,8 +11,8 @@ source: gamedata-v71/data/assets/init/race/*.txt
 
 # Species aptitudes (the two-channel model)
 
-Every race carries **two independent job signals** in its init file, and they can
-disagree. Reading them as one number is the common mistake — a race can love a job it
+Every species carries **two independent job signals** in its init file, and they can
+disagree. Reading them as one number is the common mistake — a species can love a job it
 is mediocre at, or excel at a job it resents.
 
 ## The two channels
@@ -55,11 +55,10 @@ types.
 - **Two contexts**: `ROOM_*` governs capital rooms; a parallel `WORLD_BUILDING_*` set
   governs world-map camps (later-game expansion). Cards scope to `ROOM_*` unless noted.
 
-## Per-race cards
+## Per-species cards
 
-Each race owns its own values: [[human]], [[cretonian]], [[dondorian]], [[garthimi]],
-[[tilapi]], [[amevia]], [[cantor]], [[argonosh]]. A generated Dataview summary lives
-in [[race-comparison]] (Obsidian-only view, rebuilt from the cards, not authoritative).
+Each species owns its own values: [[human]], [[cretonian]], [[dondorian]], [[garthimi]],
+[[tilapi]], [[amevia]], [[cantor]], [[argonosh]].
 
 ## Open
 

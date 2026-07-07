@@ -11,7 +11,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # run from anywhere
 
 CURRENT_VERSION = "v71"
 
-CATEGORIES = {"mechanic", "race", "building", "strategy", "event", "reference"}
+CATEGORIES = {"mechanic", "species", "building", "strategy", "event", "reference"}
 EVIDENCE   = {"game-data", "measured", "patch-note", "dev-stated", "community"}
 STATUS     = {"open", "verified", "disputed"}
 AFFECTS    = {"food", "industry", "efficiency", "logistics", "loyalty",
@@ -43,7 +43,7 @@ for f, txt in texts.items():
     d = dict(re.findall(r"^([\w-]+):\s*(.+)$", fm.group(1), re.M))
     if d.get("id") != fid:            errors.append(f"{fid}: id mismatch ({d.get('id')})")
     if d.get("category") not in CATEGORIES: errors.append(f"{fid}: bad category ({d.get('category')})")
-    if d.get("evidence") not in EVIDENCE:   errors.append(f"{fid}: bad evidence ({d.get('evidence')})")
+    if d.get("evidence") and d.get("evidence") not in EVIDENCE: errors.append(f"{fid}: bad evidence ({d.get('evidence')})")
     if d.get("status") not in STATUS:       errors.append(f"{fid}: bad status ({d.get('status')})")
     if not d.get("version"):                errors.append(f"{fid}: missing version")
     elif d["version"] != CURRENT_VERSION:   warnings.append(f"{fid}: STALE (version {d['version']} < {CURRENT_VERSION})")

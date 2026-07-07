@@ -1,80 +1,121 @@
 ---
 id: human
-name: Human
-category: race
-version: v71
-evidence: game-data
+category: species
 status: verified
-source: gamedata-v71/data/assets/init/race/HUMAN.txt
-# --- dataview summary fields ---
-playable: true
-climate: temperate
-terrain: flatland
-archetype: scholar-generalist
-strong: [education, knowledge, admin, farming]
-weak: [mining]
-refuses: [gem-mining]
-costs: [low-sanity, low-lawfulness, short-lived]
+version: v71
+source: gamedata
 ---
 
 # Human
 
-The default playable race: temperate-climate flatlanders with no terrain lock and no
-sharp specialisation. Their one real economic edge is **knowledge work** — schools,
-universities, libraries, laboratories, admin — paid for with the worst sanity and
-lawfulness of any species. The forgiving starter, but a crime-prone one.
+> Humans, said to be the last creation of the gods. Excel at intelligent jobs and are
+> decent farmers. They can be a constant headache with insanity, criminal behavior, and
+> demands for lavish surroundings.
+>
+> Humans are regarded as the final creation of the Astarii, possessing free will and a
+> flexible mind. Ancient men were immortal, but when they sided with Aminion in the
+> second war of the gods, they were punished with mortality. Humans make excellent
+> researchers and administrators. They are also fairly good at farming.
 
-## Two channels (read separately)
+Playable. Challenge: Medium.
 
-A race carries two independent job signals that can disagree — the general mechanic is
-on [[species-aptitudes]]:
+| Pros | Cons |
+|------|------|
+| Great at research and administration | Prone to criminal activity and insanity |
+| Excellent at learning | Unremarkable soldiers |
+| Decent at farming | |
+| Wants stone and grand buildings | |
+| Gets along with all other species | |
 
-- **Preference** (`PREFERRED.WORK`) — how much subjects *like* a job: fulfillment and
-  auto-assignment favour, **not** output.
-- **Production** (`BOOST.ROOM_*>MUL`) — the species multiplier in the [[production-math]]
-  formula, applied to output. Read literally (×).
+## Basics
+| Field | Value |
+|-------|-------|
+| Size | 6 × 9 |
+| Baby / child days | 12 / 80 |
+| Slave price | 11 (recovery 0.5) |
 
-Both key on species, never on status: a Human works identically free, pleb, or slave —
-only fulfillment differs ([[slavery]]).
+## Population multipliers
+| Climate | × |   | Terrain | × |
+|---------|---|---|---------|---|
+| Temperate | 1.0 | | Open | 1.5 |
+| Cold | 0.8 | | Mountain | 0.2 |
+| Hot | 0.8 | | Forest | 0.2 |
 
-## Production (capital rooms)
+Max ×1.0, growth 0.075.
 
-| Room | × |
-|------|---|
-| School / University | 1.5 |
-| Admin / Library / Laboratory | 1.25 |
-| Farm / Orchard | 1.1 |
+## Production — capital rooms
+| ×    | Rooms |
+|------|-------|
+| 1.5  | School, University |
+| 1.25 | Administration, Laboratory, Library |
+| 1.1  | Farms, Orchards |
 
-Only species with an Innovation/Administration/Knowledge bonus. Farm boost (+10%) is
-real but half of [[cretonian]]'s (+25%). Unlisted rooms default to ×1.0 [Likely].
-World-map camps (`WORLD_BUILDING_*`) parked for a future world-layer card.
+## Work preferences
+| Weight | Jobs |
+|--------|------|
+| +2.0  | Laboratory, Library |
+| +1.0  | Embassy, Physician, Stage, University |
+| +0.75 | Administration, Asylum, Barber, Bowyer, Carpenter, Crypt, Inn, Jeweller, Mechanic, School, Tailor, Tavern |
+| +0.5  | Graveyard, Market, Secret Police, Speaker |
+| +0.25 | Export Depot, Smithy, Weaver |
+| −0.75 | Charcoaler, Metal Smelter |
+| −1.0  | Gem Mine |
 
-## Preference (likes / dislikes)
+## Physical
+| Stat | Value |
+|------|-------|
+| Death age | ×0.8 |
+| Cold resistance | −0.15 |
+| Hot resistance | −0.15 |
 
-Strong: Library, Laboratory (+2.0); University, Stage, Embassy (+1.0). Mild (+0.75):
-most workshops, admin, tavern, tomb, school. Dislikes: gem mining (−1.0), coal/ore
-refining (−0.75). Nothing hard-barred.
+## Combat
+| Stat | Value |
+|------|-------|
+| Blunt attack | +10 |
 
-## Traits & costs
+## Behaviour
+| Stat | Value |
+|------|-------|
+| Lawfulness | ×0.75 |
+| Sanity | ×0.8 |
 
-- **Sanity ×0.8, Lawfulness ×0.75** — lowest of any race; more Deranged and crime.
-  Weigh against [[law-and-order]] and asylum/[[health-and-disease]].
-- **Death age ×0.8** — shorter-lived, faster population turnover.
-- **Cold/Hot resistance −0.15 each** — the reason they lock to temperate (climate ×1.0
-  temperate, ×0.8 otherwise); on open terrain ×1.5, mountain/forest ×0.2.
-- **Immigration ×1.5** — strong upside: Humans draw settlers faster than any race,
-  reinforcing them as the populous default.
-- Minor: blunt attack +10; otherwise combat-average.
+## Civic
+| Stat | Value |
+|------|-------|
+| Immigration | ×1.5 |
 
-## Preferences & affinities
+## Religion — belief per god
+| God | Value |
+|-----|-------|
+| Aminion | 1.0 |
+| Athuri | 1.0 |
+| Crator | 1.0 |
+| Shmalor | 1.0 |
 
-Food: bread, meat, mushroom, egg; drinks anything. Build materials: Grand (1.0) >
-Stone (0.7) > Wood (0.5); mountain-carved (0.2) least liked. Neutral (+0.75) to all
-races except cooler toward [[tilapi]] (+0.2); [[dondorian]] pairs well (shared food,
-road, structure tastes). Others tolerate Humans at a flat 1.0 — universally easy
-neighbours.
+## Fulfillment
+| Variable | Value |
+|----------|-------|
+| Food | Bread, Meat, Mushroom, Egg |
+| Drink | any |
+| Sculpture monument (×8) | citizen 0.5 · slave 0.5 |
+| Nature monument (×8) | citizen 0.5 · slave 0.5 |
+| Stored gems | citizen 1 · noble 1 |
+| Noise (disliked) | citizen 0.5 |
+| Space | citizen 0.5 |
 
-## Open
+## Affinity — toward other species
+| Value | Species |
+|-------|---------|
+| 0.75 | Garthimi, Cretonian, Cantor, Amevia, Dondorian, Argonosh |
+| 0.2  | Tilapi |
 
-- Blank-cell defaults ([Likely] ×1.0 production / 0 preference) not yet spot-checked in game.
-- `WORLD_BUILDING_*` world-map layer parked.
+Others toward Human: 1.0.
+
+## Build preferences
+| Material | × |   | Road | × |
+|----------|---|---|------|---|
+| Grand | 1.0 | | Decor | 1.0 |
+| Stone | 0.7 | | Stone (2) | 0.8 |
+| Wood | 0.5 | | Stone (1) | 0.5 |
+| Outdoors | 0.3 | | other | 0.1 |
+| Mountain | 0.2 | | | |
