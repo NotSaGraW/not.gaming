@@ -1,6 +1,5 @@
 ---
 id: logistics-system
-name: Logistics system (storage, hauling, orders)
 category: mechanic
 affects: [logistics, efficiency]
 version: v71
@@ -10,17 +9,32 @@ status: open
 
 # Logistics system (storage, hauling, orders)
 
-The moving parts (dev manual, Ch11):
+The moving parts (dev manual, Ch11). Only goods stored in logistics buildings/rooms
+appear on the goods panel.
 
-- **Warehouses** — collect crated resources in work radius; each crate adds capacity, upgrades raise per-crate capacity; stored goods decay slower. Only goods in logistics rooms appear on the goods panel.
-- **Haulers** — single-resource mini-warehouses, no walls needed; place where the good is consumed.
-- **Loading/unloading stations** — bulk transport over long distances; more workers = faster prep, cart capacity fixed; destinations not specifiable (distance barely matters to throughput). Economical only at scale — "replacing a few warehouse workers with one of these is not economical."
-- **Pull/push orders** — the glue between storages; **ignore work radius entirely**; pull limits prevent draining the source. This is how you feed districts without global hauling chaos.
-- **Fetch / prioritize toggles** — fetch = may take from ground and room outputs; prioritize = may also take from other logistics buildings that don't have prioritize set.
+| Element | Behaviour |
+|---------|-----------|
+| Warehouse | Collects crated resources in its work radius; each crate adds capacity, upgrades raise per-crate capacity; stored goods decay slower. Can use pull orders. |
+| Hauler | Single-resource mini-warehouse, no walls needed; place where the good is consumed. Can use pull orders. |
+| Loading / unloading station | Bulk transport over long distance; more workers = faster prep, cart capacity is fixed. Destination not specifiable (distance barely affects throughput). Economical only at scale — "not economical" to replace a few warehouse workers. |
+| Pull / push orders | Redistribute between storages; **ignore work radius entirely**; a pull limit leaves a set amount in the source. |
+| Fetch / prioritize toggles | Fetch = take from the ground and room outputs; prioritize = also take from other logistics rooms that don't have prioritize set. |
 
-**Worker classes:** logistics workers (employed by the room) have boosted, boostable carry capacity; oddjobbers (unemployed) haul opportunistically, low capacity, unboostable; regular employees haul only for their job, same low cap. Species differ in natural carry capacity — matters only for logistics workers ([[battle-equipment]]-style aptitude choice: put high-carry species in warehouses).
+Worker classes:
 
-Together with [[free-fetch]] (services need proximity, not adjacency) and the zero-cost fetch radius on production rooms ([[production-math]]), the dev-stated layout doctrine is: **plan by radius and pull-order topology, not by adjacency.**
+| Class | Carrying capacity |
+|-------|-------------------|
+| Logistics worker (employed by the room) | High, boostable; works only for its room |
+| Oddjobber (unemployed) | Low, not boostable; hauls opportunistically anywhere |
+| Other employee | Low, not boostable; hauls only for its own job |
+
+Species differ in natural carrying capacity, which matters only for logistics workers —
+so put high-carry species (Dondorian > Cretonian > Human) in warehouse jobs.
+
+With [[free-fetch]] (services need proximity, not adjacency) and the zero-cost fetch
+radius on production rooms ([[production-math]]), the layout takeaway is to plan by radius
+and pull-order topology rather than adjacency — a synthesis of the above, not a single
+dev quote.
 
 - depends-on: —
 - see-also: [[free-fetch]], [[production-math]], [[trade]] (import/export depots are logistics rooms with a market attached)

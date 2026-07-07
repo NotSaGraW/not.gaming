@@ -1,6 +1,5 @@
 ---
 id: production-math
-name: Production math (multipliers vs additives)
 category: mechanic
 affects: [industry, efficiency, logistics]
 version: v71
@@ -10,17 +9,34 @@ status: verified
 
 # Production math (multipliers vs additives)
 
-The formula behind every industry (dev manual, Ch13): **base rate × all multipliers × (1 + sum of all additives)** = rate per worker; × employees × workload = daily production.
+The formula behind every industry (dev manual, Ch13): **base rate × all multipliers ×
+(1 + sum of all additives)** = rate per worker; × employees × workload = daily production.
 
-- **Multiplicative** (dominant): degradation, efficiency, species aptitude. Dev: "the multiplicative elements are much more important than the additive ones — take care to maintain and build your industries well." Species is usually the only multiplier that can exceed 1.
-- **Additive** (diminishing relative value as they stack): tools, technology, nobles, education, experience. Two +100% additives = ×3; one additive +100% and one multiplicative ×2 = ×4.
-- Increasing production speed **also scales input consumption** — it's speed, not efficiency. Input savings come from consumption-node techs ([[tech-tree]]).
+| Multiplicative (dominant) | Additive (diminishing as they stack) |
+|---------------------------|--------------------------------------|
+| degradation, efficiency, species aptitude | tools, technology, nobles, education, experience |
 
-**Workload semantics differ by room type:** farms cap total work per day — over-staffing is fine and buffers travel time; low workload = you can remove farmers. Workshops have fixed slots — workload under 100% means missing workers, storage overflow, or supply failure, never "too many staff."
+Dev: "the multiplicative elements are much more important than the additive ones." The
+species multiplier is usually the only one that can become positive. Stacking: two +100%
+additives sum to 300% speed; two ×2 multipliers give ×4 — the same as combining one +100%
+additive with one ×2 multiplier.
 
-**Proximity:** workers fetch inputs within a short radius at zero production cost (hover the consumption icon to see the radius per workbench count); beyond it, hauling eats work time. Combined with [[free-fetch]], this kills most warehouse-adjacency dogma — see [[logistics-system]].
+Increasing production also increases input consumption — it is strictly the *speed* of
+production, not its efficiency. Input savings come from consumption-node techs ([[tech-tree]]).
 
-Strategy implication (dev-stated, Ch16): early game, **specialize** — the species multiplier compounds with tech additives, so concentrating research and workers on industries your species excels at beats diversification until the capital is large.
+Workload differs by room type. Farms cap total work per day, so over-staffing is fine and
+buffers travel distance — a low workload means you can remove farmers without losing
+output. Workshops have a fixed number of working spots, so a workload below 100% means
+missing workers, storage overflow, or a supply issue — never over-staffing.
+
+Proximity: workers fetch resources within a short radius at zero production cost (hover
+the consumption icon to see how many workbenches benefit at each range); beyond it,
+hauling eats work time. With [[free-fetch]], this removes most warehouse-adjacency
+assumptions — see [[logistics-system]].
+
+Strategy (dev-stated, Ch16): early game, specialize — the multiplicative species boost
+means tech and workers concentrated on the industries your species excels at beat
+diversification until the capital is large.
 
 - depends-on: —
 - see-also: [[tech-tree]], [[free-fetch]], [[logistics-system]], [[training-grounds]] (maintenance/degradation applies to all rooms)
