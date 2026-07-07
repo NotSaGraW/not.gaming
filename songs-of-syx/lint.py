@@ -11,7 +11,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # run from anywhere
 
 CURRENT_VERSION = "v71"
 
-CATEGORIES = {"mechanic", "race", "building", "strategy", "event"}
+CATEGORIES = {"mechanic", "race", "building", "strategy", "event", "reference"}
 EVIDENCE   = {"game-data", "measured", "patch-note", "dev-stated", "community"}
 STATUS     = {"open", "verified", "disputed"}
 AFFECTS    = {"food", "industry", "efficiency", "logistics", "loyalty",

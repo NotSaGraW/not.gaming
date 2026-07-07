@@ -28,6 +28,7 @@ cards — not authoritative.
 - [[overlays]] — efficiency, logistics, health, fulfillment — the 17 in-game instruments; placement claims are judged by overlay, never by screenshot
 - [[water-and-irrigation]] — food, efficiency, health — pumps on groundwater only, 100 pressure = 100 canal tiles; irrigation cost scales with distance → moisture only conditionally fixable
 - [[battle-equipment]] — military, industry — measured tooltip stats: training multipliers, armor/weapon/mount trade-offs, bow scaling table
+- [[species-aptitudes]] — industry, fulfillment, population — the two-channel model: PREFERRED.WORK (preference/fulfillment) vs BOOST.ROOM_*>MUL (production multiplier); both key on species not status
 
 ### strategy
 - [[population-thresholds]] — population, military, health, admin — the gates: 150 (accidents), 200 (raiders), ~300 (hunting cap), 1500 (promotions)
@@ -36,7 +37,15 @@ cards — not authoritative.
 - [[run-setup-priorities]] — population, food, efficiency — plan deeply only race + region (frozen); the game flattened most other setup gradients; planning tool reserves skeletons
 
 ### race
-*(none yet — Argonosh race-file data available in [[2026-07-06-discord-qanda-governing-slaves-health-growth]] if wanted)*
+- [[human]] — scholar-generalist; temperate flatland; +50% education, +25% knowledge; worst sanity/lawfulness; immigration ×1.5
+- [[cretonian]] — pacifist farmer; best farms (+25%); docile & fast-breeding (slave stock); refuses hunting/fightpit; short-lived
+- [[dondorian]] — craftsman-miner; cold mountains; best workshops/jewelry/smithy; non-reproducing, immigration ×25; long-lived
+- [[garthimi]] — beast-miner; hot mountains; mining/mason/hunting + Balticrawler-only pasture ×3; bred not born; cannot govern
+- [[tilapi]] — forager-archer; forests; default herder, orchard/wood ×1.4, bows ×1.5; refuses all mining; misanthropic
+- [[amevia]] — fisher; coastal/aquatic; fishery ×1.25; no WORK/affinity data in file (gaps flagged)
+- [[cantor]] — non-playable haven titan; industrial ×2 everywhere but zero preference; physical monster; no immigration
+- [[argonosh]] — non-playable haven enforcer; no economy (ROOM* ×0.1); pure police/war caste
+- [[race-comparison]] — generated Dataview view (Obsidian-only, rebuilt from race cards, not authoritative)
 
 ### building
 - [[training-grounds]] — military, efficiency — capacity = training dummies (+1 each, 2×2, need access gap; ~5 tiles/soldier, measured); emits noise

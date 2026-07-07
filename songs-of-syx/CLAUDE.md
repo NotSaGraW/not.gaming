@@ -76,7 +76,9 @@ Each card carries:
 - **id** — stable slug, never renamed. All links point to this.
 - **name** — human-readable display name.
 - **category** — exactly one of: `mechanic` | `race` | `building` | `strategy`
-  | `event`. If a card wants two, split the card.
+  | `event` | `reference`. If a card wants two, split the card. `reference` is
+  for generated, non-authoritative views (e.g. a Dataview table rebuilt from
+  other cards) — same status as `index.md`; owns no facts of its own.
 - **affects** — one or more from the controlled vocabulary: `food`, `industry`,
   `efficiency`, `logistics`, `loyalty`, `fulfillment`, `military`, `trade`,
   `admin`, `population`, `health`. One form per term; extend only via curator
