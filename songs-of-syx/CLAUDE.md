@@ -142,6 +142,12 @@ example that motivated it so the mistake stays recognizable.
 - **Never invent meaning.** If a block's effect isn't understood (a raw `STATS`
   weight, the `RESOURCE` yield) flag it or omit it — do not guess a purpose.
 
+- **Formulae: a code block for the equation, a table for the factor values.** Never
+  bury a formula or a list of factor ranges in prose. `output = Base × Skill × …` goes
+  in a ``` block; the Species/Faction/Tech envelopes go in a sorted table (see
+  [[pastures]]). LaTeX `$$` is optional for typeset math but renders only in Obsidian
+  and on GitHub, not plain VS Code — the code block renders everywhere.
+
 Frontmatter working set: `category` · `status` · `version` · `source` (source as
 provenance *type*: `gamedata`/`patch`/`ingame`/`community`). `category` mirrors the
 game's domains (`species`, not "race"); `type` is a sub-bucket only where a domain is

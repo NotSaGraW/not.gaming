@@ -38,6 +38,7 @@ Non-playable (haven-gated). No climate/terrain profile; immigration ×0.
 
 ## Work preferences
 Default 0 for all jobs, except:
+
 | Weight | Jobs |
 |--------|------|
 | +10.0  | Secret Police |

@@ -39,6 +39,7 @@ Stockpile: +10 storage.
 
 ## Work preferences
 Default 0 for all jobs, except:
+
 | Weight | Jobs |
 |--------|------|
 | +10.0  | Court |
