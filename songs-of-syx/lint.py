@@ -11,7 +11,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # run from anywhere
 
 CURRENT_VERSION = "v71"
 
-CATEGORIES = {"mechanic", "species", "building", "strategy", "event", "reference"}
+CATEGORIES = {"mechanic", "species", "building", "goods", "animal", "strategy", "event", "reference"}
 EVIDENCE   = {"game-data", "measured", "patch-note", "dev-stated", "community"}
 STATUS     = {"open", "verified", "disputed"}
 AFFECTS    = {"food", "industry", "efficiency", "logistics", "loyalty",
@@ -50,6 +50,7 @@ for f, txt in texts.items():
     bad = [a for a in re.findall(r"\w+", d.get("affects", "")) if a not in AFFECTS]
     if bad: errors.append(f"{fid}: affects outside vocab: {bad}")
     for m in re.findall(r"\[\[([^\]|]+)", txt):
+        m = m.rstrip("\\")  # strip table-escaped pipe: [[id\|Alias]]
         linked_from_cards.add(m)
         if m not in ids and m not in src_ids:
             errors.append(f"{fid}: broken link [[{m}]]")

@@ -51,6 +51,14 @@ cards — not authoritative.
 ### building
 - [[training-grounds]] — military, efficiency — capacity = training dummies (+1 each, 2×2, need access gap; ~5 tiles/soldier, measured); emits noise
 - [[pastures]] — food, industry, efficiency — output formula measured; adult-fraction multiplier dominates young herds (~0.10 floor); 2-missed-days kills livestock; headroom map: faction/tech/nobles
+- [[carpenter]] — producing-building card: 5 recipes (furniture/spear/warhammer/shield), room factors, per-species output×preference slice
+- [[buildings]] — all 112 rooms, one alphabetical table: output (good/need/points/population) + the game's own descriptions; recipes and build/upkeep costs deferred to their own card
+
+### goods
+- [[goods]] — all 42 resources grouped by category (food/raw/refined/manufactured/military) with decay rates; military doesn't count toward raider wealth
+
+### animal
+- [[animals]] — all 9 animals: 6 pasture livestock + 3 wild fauna; yields, climate/terrain suitability, danger/mass, game descriptions
 
 ### event
 *(none yet)*
