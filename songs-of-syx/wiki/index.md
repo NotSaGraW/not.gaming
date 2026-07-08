@@ -51,7 +51,7 @@ cards — not authoritative.
 ### building
 - [[training-grounds]] — military, efficiency — capacity = training dummies (+1 each, 2×2, need access gap; ~5 tiles/soldier, measured); emits noise
 - [[pastures]] — food, industry, efficiency — output formula measured; adult-fraction multiplier dominates young herds (~0.10 floor); 2-missed-days kills livestock; headroom map: faction/tech/nobles
-- [[carpenter]] — producing-building card: 5 recipes (furniture/spear/warhammer/shield), room factors, per-species output×preference slice
+- [[crafting]] — workshops + refiners in one card (separated groups): all ~31 recipes, room factors, per-species output wildcards (ROOM_WORKSHOP*/ROOM_REFINER*) + the 7 workshop overrides
 - [[buildings]] — all 112 rooms, one alphabetical table: output (good/need/points/population) + the game's own descriptions; recipes and build/upkeep costs deferred to their own card
 
 ### goods

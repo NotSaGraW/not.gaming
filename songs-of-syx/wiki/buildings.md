@@ -38,7 +38,7 @@ be shown correctly rather than a lossy column here.
 | Brewery | Piva, Shedeh | Refiner that turns Pottery, Coal and Grain into Drink. Can be upgraded to work with Fruit instead of Grain. |
 | Canal | — | Used with water pumps to transport fresh water from fresh water sites. Pumps connected to the canals stack their water pressure. |
 | Cannibal | — | Cannibals butcher corpses for meat and other resources. Having them can be severely detrimental to your reputation, but some species actually prefer humanoid meat. |
-| [[carpenter\|Carpenter]] | Furniture, Spear, Warhammer, Shield | Workshop that carves Furniture out of Wood. |
+| [[crafting\|Carpenter]] | Furniture, Spear, Warhammer, Shield | Workshop that carves Furniture out of Wood. |
 | Catapult | — | Can be mounted on walls, or on the ground. Can fire at enemies within a 90-degree angle. Needs stone and manpower to operate. Is manned by civilians through the battle UI. When used on the world map, unless an army is fortified, only half of the catapults will be present in battle. |
 | Chamber | — | Where the finest of subjects sleep. Requires a lot of work to maintain. |
 | Charcoaler | Coal | Refiner that turns Wood into Coal. |
