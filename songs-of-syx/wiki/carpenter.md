@@ -20,11 +20,11 @@ tech and species multiplier.
 
 | Recipe | Inputs | Output |
 |--------|--------|--------|
-| Furniture | 2 Wood | 0.5 Furniture |
-| Spear (wood/stone) | 2 Wood + 2.5 Stone | 0.5 Spear |
-| Spear (wood/metal) | 1 Wood + 0.4 Metal | 1.0 Spear |
-| Warhammer | 2 Wood + 2.5 Stone | 0.25 Warhammer |
-| Shield | 6 Wood + 2 Leather | 1.0 Shield |
+| Furniture | 2.0 Wood | 0.5 Furniture |
+| Spear (wood/stone) | 2.0 Wood + 2.5 Stone | 0.5 Spear |
+| Spear (wood/metal) | 1.0 Wood + 0.4 Metal | 1.0 Spear |
+| Warhammer | 2.0 Wood + 2.5 Stone | 0.25 Warhammer |
+| Shield | 6.0 Wood + 2.0 Leather | 1.0 Shield |
 
 Inputs/outputs link to [[goods]].
 

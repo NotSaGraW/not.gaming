@@ -142,6 +142,12 @@ example that motivated it so the mistake stays recognizable.
 - **Never invent meaning.** If a block's effect isn't understood (a raw `STATS`
   weight, the `RESOURCE` yield) flag it or omit it — do not guess a purpose.
 
+- **Numbers: reproduce the file's exact string; never reformat.** Do what the game does.
+  The file writes `1.0`, so the card says `1.0`, not `1`; it writes `2.0 Wood`, not `2`. Do
+  not strip trailing zeros (a `{:g}` / `%g` bug turned Bread's `1.0` into `1`) and do not pad
+  to a uniform precision (the game uses mixed precision — 0.1, 0.05, 0.001 — and so do we).
+  The value is a fact; its written form is part of the fact.
+
 - **Formulae: a code block for the equation, a table for the factor values.** Never
   bury a formula or a list of factor ranges in prose. `output = Base × Skill × …` goes
   in a ``` block; the Species/Faction/Tech envelopes go in a sorted table (see

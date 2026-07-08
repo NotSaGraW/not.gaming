@@ -27,8 +27,8 @@ good is on [[buildings]].
 | Fruit | 0.5 |
 | Vegetable | 0.5 |
 | Meat | 0.75 |
-| Bread | 1 |
-| Fish | 1 |
+| Bread | 1.0 |
+| Fish | 1.0 |
 
 ## Raw materials (1)
 
