@@ -3,7 +3,8 @@ id: amevia
 category: species
 status: verified
 version: v71
-source: gamedata
+evidence: game-data
+source: [gamedata-v71/data/assets/init/race/Q_AMEVIA.txt, gamedata-v71/data/assets/text/race/Q_AMEVIA.txt]
 ---
 
 # Amevia

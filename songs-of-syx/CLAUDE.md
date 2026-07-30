@@ -73,8 +73,9 @@ people's words are not ours to republish.
 
 Each card carries:
 
-- **id** — stable slug, never renamed. All links point to this.
-- **name** — human-readable display name.
+- **id** — stable slug, never renamed. All links point to this. The card's `# H1`
+  carries the human-readable display name; there is no separate `name` field
+  (it was defined but never written on any card — resolved 2026-07-30).
 - **category** — exactly one of: `mechanic` | `species` | `building` | `goods` |
   `animal` | `strategy` | `event` | `reference`. If a card wants two, split the card. `reference` is
   for generated, non-authoritative views (e.g. a Dataview table rebuilt from
@@ -82,7 +83,10 @@ Each card carries:
 - **affects** — one or more from the controlled vocabulary: `food`, `industry`,
   `efficiency`, `logistics`, `loyalty`, `fulfillment`, `military`, `trade`,
   `admin`, `population`, `health`. One form per term; extend only via curator
-  approval, recorded here.
+  approval, recorded here. **Required on `mechanic` and `strategy` cards**, where
+  the card is itself a claim about an effect; omitted on the entity layers
+  (`species`, `building`, `goods`, `animal`), which describe things rather than
+  effects. Lint enforces the vocabulary always, presence only where required.
 - **version** — game version the claim was last verified against (e.g. `v71`).
   Staleness is *derived* (version < current game version → lint warns), never
   stored as a field.
@@ -99,7 +103,19 @@ Each card carries:
 - **Run-independence:** cards state facts about the game, valid independent of
   any playthrough. Curator run context appears only as measurement conditions
   in `test` sources — never as claims, never in cards or the log as fact.
-- **source** — `[[link]]` to file(s) in `source/`.
+- **source** — where the claims are traceable to. Two forms, and every card
+  carries at least one of them:
+  1. **Curated source** — `[[link]]` to a committed file in `source/`, written on
+     a `**Source:**` line in the card body. The form for patch notes, devlogs,
+     `test` measurements, Discord and wiki captures.
+  2. **Game-data pointer** — a `source:` frontmatter key holding one or more
+     paths *relative to `source/`*, into the versioned tree:
+     `source: [gamedata-v71/data/assets/init/race/HUMAN.txt]`. This exists
+     because the publication rule keeps the game-file tree local-only, so those
+     cards have no committed file to `[[link]]`; a path is still exact,
+     re-checkable against the local copy, and diffable across versions. Point at
+     a directory when a card genuinely covers the whole set (`buildings` →
+     `init/room/`, all 112).
 - **relations** — `depends-on` (directional: prerequisite mechanic/tech) and
   `see-also` (undirected, use sparingly).
 
@@ -164,12 +180,18 @@ example that motivated it so the mistake stays recognizable.
   old and new cards. (This formula rule sent us back to reformat production-math and
   combat-mechanics.)
 
-Frontmatter working set: `category` · `status` · `version` · `source` (source as
-provenance *type*: `gamedata`/`patch`/`ingame`/`community`). `category` mirrors the
-game's domains (`species`, not "race"); `type` is a sub-bucket only where a domain is
-large and self-grouping (e.g. buildings). `evidence` is now optional (source-as-type
-carries provenance; lint only checks it when present); `name`/`affects` are still an
-open question. The species layer omits all three.
+Frontmatter contract (resolved 2026-07-30, replacing the interim "working set"):
+`id` · `category` · `version` · `evidence` · `status` on every card, plus `affects`
+on `mechanic`/`strategy`, plus at least one attribution (`source:` pointer or a
+`[[source-file]]` link in the body). `category` mirrors the game's domains
+(`species`, not "race").
+
+The interim rule made `evidence` optional and overloaded `source` as a provenance
+*type* (`gamedata`/`patch`/`ingame`/`community`). That collapsed two axes the schema
+had deliberately split — how much to trust a claim, and which file it came from —
+and left 12 entity cards naming a category of origin instead of an origin, with
+nothing for lint to check. Provenance tier stays on `evidence`; `source` names the
+artifact. A card that cannot answer both is not finished.
 
 ## Operations
 

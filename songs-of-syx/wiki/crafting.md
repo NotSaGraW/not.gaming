@@ -3,7 +3,8 @@ id: crafting
 category: building
 status: verified
 version: v71
-source: gamedata
+evidence: game-data
+source: [gamedata-v71/data/assets/init/room/, gamedata-v71/data/assets/text/room/]
 ---
 
 # Crafting & Refining

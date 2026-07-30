@@ -3,7 +3,8 @@ id: cretonian
 category: species
 status: verified
 version: v71
-source: gamedata
+evidence: game-data
+source: [gamedata-v71/data/assets/init/race/CRETONIAN.txt, gamedata-v71/data/assets/text/race/CRETONIAN.txt]
 ---
 
 # Cretonian

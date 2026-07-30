@@ -3,7 +3,8 @@ id: dondorian
 category: species
 status: verified
 version: v71
-source: gamedata
+evidence: game-data
+source: [gamedata-v71/data/assets/init/race/DONDORIAN.txt, gamedata-v71/data/assets/text/race/DONDORIAN.txt]
 ---
 
 # Dondorian

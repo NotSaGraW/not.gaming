@@ -17,6 +17,10 @@ STATUS     = {"open", "verified", "disputed"}
 AFFECTS    = {"food", "industry", "efficiency", "logistics", "loyalty",
               "fulfillment", "military", "trade", "admin", "population", "health"}
 SPECIAL    = {"index.md", "log.md"}
+AFFECTS_REQUIRED = {"mechanic", "strategy"}   # entity layers describe things, not effects
+
+# The versioned game-file tree is gitignored, so path checks only run where it exists.
+GAMEDATA_PRESENT = bool(glob.glob("source/gamedata-*"))
 
 errors, warnings = [], []
 
@@ -43,12 +47,26 @@ for f, txt in texts.items():
     d = dict(re.findall(r"^([\w-]+):\s*(.+)$", fm.group(1), re.M))
     if d.get("id") != fid:            errors.append(f"{fid}: id mismatch ({d.get('id')})")
     if d.get("category") not in CATEGORIES: errors.append(f"{fid}: bad category ({d.get('category')})")
-    if d.get("evidence") and d.get("evidence") not in EVIDENCE: errors.append(f"{fid}: bad evidence ({d.get('evidence')})")
+    if d.get("evidence") not in EVIDENCE:   errors.append(f"{fid}: bad/missing evidence ({d.get('evidence')})")
     if d.get("status") not in STATUS:       errors.append(f"{fid}: bad status ({d.get('status')})")
     if not d.get("version"):                errors.append(f"{fid}: missing version")
     elif d["version"] != CURRENT_VERSION:   warnings.append(f"{fid}: STALE (version {d['version']} < {CURRENT_VERSION})")
     bad = [a for a in re.findall(r"\w+", d.get("affects", "")) if a not in AFFECTS]
     if bad: errors.append(f"{fid}: affects outside vocab: {bad}")
+    if d.get("category") in AFFECTS_REQUIRED and not d.get("affects"):
+        errors.append(f"{fid}: missing affects (required on {d['category']} cards)")
+
+    # attribution: a game-data pointer in frontmatter, or a [[source-file]] link in the body.
+    # Every card must answer "which artifact is this traceable to", not just "what kind of origin".
+    ptrs = [p.strip() for p in d.get("source", "").strip().strip("[]").split(",") if p.strip()]
+    for p in ptrs:
+        if not p.startswith("gamedata-"):
+            errors.append(f"{fid}: source is not a gamedata-<version>/<path> pointer ({p})")
+        elif GAMEDATA_PRESENT and not os.path.exists(os.path.join("source", p)):
+            errors.append(f"{fid}: source path not in local tree: {p}")
+    body_srcs = [m.rstrip("\\") for m in re.findall(r"\[\[([^\]|]+)", txt)]
+    if not ptrs and not any(m in src_ids for m in body_srcs):
+        errors.append(f"{fid}: no attribution (needs a source: pointer or a [[source-file]] link)")
     for m in re.findall(r"\[\[([^\]|]+)", txt):
         m = m.rstrip("\\")  # strip table-escaped pipe: [[id\|Alias]]
         linked_from_cards.add(m)

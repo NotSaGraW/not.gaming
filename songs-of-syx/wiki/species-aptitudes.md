@@ -5,6 +5,7 @@ affects: [industry, fulfillment, population]
 version: v71
 evidence: game-data
 status: verified
+source: [gamedata-v71/data/assets/init/race/]
 ---
 
 # Species aptitudes (the two-channel model)
